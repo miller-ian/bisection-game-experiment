@@ -1,0 +1,4 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+space,3.525000095,  fsdfsdf ,1,0,5,0,1,4,type,asdasd,001,2020-09-03_10h56.23.439,inputText,3.1.3,60
+,,b fsdfs,1,0,5,1,1,4,this,asdasd,001,2020-09-03_10h56.23.439,inputText,3.1.3,60
+,,dfsfsdf,1,0,5,2,1,4,word,asdasd,001,2020-09-03_10h56.23.439,inputText,3.1.3,60

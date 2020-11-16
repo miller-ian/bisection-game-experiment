@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+space,12.81399989,gertig,1,0,5,0,1,4,type,009,001,2019-12-28_12h34.39.182,inputText,3.1.3,60
+,,elephant,1,0,5,1,1,4,this,009,001,2019-12-28_12h34.39.182,inputText,3.1.3,60
+,,ohmygod,1,0,5,2,1,4,word,009,001,2019-12-28_12h34.39.182,inputText,3.1.3,60
+,,howd,1,0,5,3,1,4,in,009,001,2019-12-28_12h34.39.182,inputText,3.1.3,60
+,,can it be different wprds,1,0,5,4,1,4,Titlecase,009,001,2019-12-28_12h34.39.182,inputText,3.1.3,60

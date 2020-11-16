@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+space,29.98199987,type,1,0,5,0,1,4,type,Kaisary,001,2020-10-04_12h33.22.657,inputText,3.1.3,60
+,,this,1,0,5,1,1,4,this,Kaisary,001,2020-10-04_12h33.22.657,inputText,3.1.3,60
+,,word,1,0,5,2,1,4,word,Kaisary,001,2020-10-04_12h33.22.657,inputText,3.1.3,60
+,,in,1,0,5,3,1,4,in,Kaisary,001,2020-10-04_12h33.22.657,inputText,3.1.3,60
+,,Titlecase,1,0,5,4,1,4,Titlecase,Kaisary,001,2020-10-04_12h33.22.657,inputText,3.1.3,60

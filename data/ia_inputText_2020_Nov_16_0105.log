@@ -1,0 +1,238 @@
+0.6195 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+2.2388 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+9.2540 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb5414f9320>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb54158c4a8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.2543 	EXP 	window1: mouseVisible = True
+9.2543 	EXP 	window1: recordFrameIntervals = False
+9.4184 	EXP 	window1: recordFrameIntervals = True
+9.6030 	EXP 	window1: recordFrameIntervals = False
+9.6673 	EXP 	Created instText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.6701 	EXP 	Created targetInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='targetInstr', opacity=1.0, ori=0, pos=array([-0.2,  0.2]), rgb=array([255., 255., 255.]), text='Target word:', units='height', win=Window(...), wrapWidth=1)
+9.6755 	EXP 	Created targetText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='targetText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.6783 	EXP 	Created instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instr', opacity=1.0, ori=0, pos=array([-0.2,  0.2]), rgb=array([255., 255., 255.]), text='Type the target word below, and press return', units='height', win=Window(...), wrapWidth=1)
+9.6787 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+9.6865 	EXP 	instText: autoDraw = True
+14.4558 	DATA 	Keypress: return
+14.4749 	EXP 	Imported cond.xlsx as conditions, 5 conditions, 1 params
+14.4751 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+14.4754 	EXP 	New trial (rep=0, index=0): OrderedDict([('prompt', 'type')])
+14.4853 	EXP 	instText: autoDraw = False
+14.4853 	EXP 	targetText: text = 'type'
+14.4853 	EXP 	targetInstr: autoDraw = True
+14.4853 	EXP 	targetText: autoDraw = True
+15.9589 	DATA 	Keypress: t
+16.2050 	DATA 	Keypress: y
+16.4862 	EXP 	targetInstr: autoDraw = False
+16.4862 	EXP 	targetText: autoDraw = False
+16.4862 	EXP 	text: text = ''
+16.4862 	EXP 	instr: autoDraw = True
+16.4862 	EXP 	text: autoDraw = True
+23.3701 	DATA 	Keypress: escape
+23.3844 	EXP 	text: text = 'escape'
+23.9882 	DATA 	Keypress: escape
+24.0026 	EXP 	text: text = 'escapeescape'
+24.3043 	DATA 	Keypress: escape
+24.3180 	EXP 	text: text = 'escapeescapeescape'
+24.4876 	DATA 	Keypress: escape
+24.5026 	EXP 	text: text = 'escapeescapeescapeescape'
+24.6372 	DATA 	Keypress: escape
+24.6519 	EXP 	text: text = 'escapeescapeescapeescapeescape'
+32.1367 	DATA 	Keypress: rcommand
+32.1538 	EXP 	text: text = 'escapeescapeescapeescapeescapercommand'
+32.4074 	DATA 	Keypress: c
+32.4191 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandc'
+32.5702 	DATA 	Keypress: c
+32.5851 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandcc'
+33.1873 	DATA 	Keypress: rcommand
+33.2020 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommand'
+33.2698 	DATA 	Keypress: c
+33.2863 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandc'
+33.4181 	DATA 	Keypress: rcommand
+33.4350 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommand'
+33.4361 	DATA 	Keypress: c
+33.4525 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandc'
+33.6026 	DATA 	Mouse: Left button down, pos=(1133,554)
+33.7060 	DATA 	Mouse:  Left button up, pos=(1133,554)
+33.9854 	DATA 	Keypress: escape
+34.0008 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescape'
+34.1720 	DATA 	Keypress: escape
+34.1853 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapeescape'
+39.1184 	DATA 	Mouse: Left button down, pos=(963,622)
+39.2180 	DATA 	Mouse:  Left button up, pos=(963,622)
+40.2389 	DATA 	Keypress: backspace
+40.2509 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapeescap'
+40.3539 	DATA 	Keypress: backspace
+40.3685 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapeesca'
+40.4528 	DATA 	Keypress: backspace
+40.4685 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapeesc'
+40.5710 	DATA 	Keypress: backspace
+40.5845 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapees'
+40.6878 	DATA 	Keypress: backspace
+40.7011 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescapee'
+40.8038 	DATA 	Keypress: backspace
+40.8179 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescape'
+40.9200 	DATA 	Keypress: backspace
+40.9353 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcescap'
+41.0374 	DATA 	Keypress: backspace
+41.0509 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcesca'
+41.1703 	DATA 	Keypress: backspace
+41.1847 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandcesc'
+41.2712 	DATA 	Keypress: backspace
+41.2853 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandces'
+41.4068 	DATA 	Keypress: backspace
+41.4178 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandce'
+41.5211 	DATA 	Keypress: backspace
+41.5359 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommandc'
+41.6378 	DATA 	Keypress: backspace
+41.6517 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcommand'
+41.7707 	DATA 	Keypress: backspace
+41.7876 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcomman'
+41.8875 	DATA 	Keypress: backspace
+41.9014 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcomma'
+42.0043 	DATA 	Keypress: backspace
+42.0211 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcomm'
+42.1204 	DATA 	Keypress: backspace
+42.1352 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrcom'
+42.2377 	DATA 	Keypress: backspace
+42.2676 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrco'
+42.5042 	DATA 	Keypress: backspace
+42.5179 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcrc'
+42.6047 	DATA 	Keypress: backspace
+42.6182 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandcr'
+42.7212 	DATA 	Keypress: backspace
+42.7343 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommandc'
+42.8378 	DATA 	Keypress: backspace
+42.8510 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcommand'
+42.9712 	DATA 	Keypress: backspace
+42.9852 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcomman'
+43.0873 	DATA 	Keypress: backspace
+43.1012 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcomma'
+43.2047 	DATA 	Keypress: backspace
+43.2178 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcomm'
+43.3230 	DATA 	Keypress: backspace
+43.3349 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcom'
+43.4373 	DATA 	Keypress: backspace
+43.4679 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrco'
+43.5527 	DATA 	Keypress: backspace
+43.5678 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrc'
+44.6198 	DATA 	Keypress: rcommand
+44.6352 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrcommand'
+44.7033 	DATA 	Keypress: backspace
+44.7183 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrcomman'
+44.8045 	DATA 	Keypress: backspace
+44.8349 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrcomma'
+44.9190 	DATA 	Keypress: backspace
+44.9349 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrcomm'
+45.0526 	DATA 	Keypress: backspace
+45.0677 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrcom'
+45.1526 	DATA 	Keypress: backspace
+45.1699 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrco'
+45.4054 	DATA 	Keypress: backspace
+45.4350 	EXP 	text: text = 'escapeescapeescapeescapeescapercommandccrcrc'
+45.6872 	DATA 	Keypress: return
+45.6883 	EXP 	New trial (rep=0, index=1): OrderedDict([('prompt', 'this')])
+45.7012 	EXP 	instr: autoDraw = False
+45.7012 	EXP 	text: autoDraw = False
+45.7012 	EXP 	targetText: text = 'this'
+45.7012 	EXP 	targetInstr: autoDraw = True
+45.7012 	EXP 	targetText: autoDraw = True
+47.7024 	EXP 	targetInstr: autoDraw = False
+47.7024 	EXP 	targetText: autoDraw = False
+47.7024 	EXP 	targetInstr: autoDraw = False
+47.7024 	EXP 	targetText: autoDraw = False
+47.7024 	EXP 	text: text = ''
+47.7024 	EXP 	instr: autoDraw = True
+47.7024 	EXP 	text: autoDraw = True
+48.3691 	DATA 	Keypress: t
+48.3882 	EXP 	text: text = 't'
+48.4364 	DATA 	Keypress: h
+48.4514 	EXP 	text: text = 'th'
+48.5042 	DATA 	Keypress: i
+48.5174 	EXP 	text: text = 'thi'
+48.5878 	DATA 	Keypress: s
+48.6007 	EXP 	text: text = 'this'
+48.6712 	DATA 	Keypress: return
+48.6722 	EXP 	New trial (rep=0, index=2): OrderedDict([('prompt', 'word')])
+48.6850 	EXP 	instr: autoDraw = False
+48.6850 	EXP 	text: autoDraw = False
+48.6850 	EXP 	targetText: text = 'word'
+48.6850 	EXP 	targetInstr: autoDraw = True
+48.6850 	EXP 	targetText: autoDraw = True
+50.6859 	EXP 	targetInstr: autoDraw = False
+50.6859 	EXP 	targetText: autoDraw = False
+50.6859 	EXP 	targetInstr: autoDraw = False
+50.6859 	EXP 	targetText: autoDraw = False
+50.6859 	EXP 	text: text = ''
+50.6859 	EXP 	instr: autoDraw = True
+50.6859 	EXP 	text: autoDraw = True
+51.0908 	DATA 	Keypress: w
+51.1005 	EXP 	text: text = 'w'
+51.1549 	DATA 	Keypress: o
+51.1673 	EXP 	text: text = 'wo'
+51.2384 	DATA 	Keypress: r
+51.2512 	EXP 	text: text = 'wor'
+51.3729 	DATA 	Keypress: d
+51.3844 	EXP 	text: text = 'word'
+51.4541 	DATA 	Keypress: return
+51.4551 	EXP 	New trial (rep=0, index=3): OrderedDict([('prompt', 'in')])
+51.4677 	EXP 	instr: autoDraw = False
+51.4677 	EXP 	text: autoDraw = False
+51.4677 	EXP 	targetText: text = 'in'
+51.4677 	EXP 	targetInstr: autoDraw = True
+51.4677 	EXP 	targetText: autoDraw = True
+53.4689 	EXP 	targetInstr: autoDraw = False
+53.4689 	EXP 	targetText: autoDraw = False
+53.4689 	EXP 	targetInstr: autoDraw = False
+53.4689 	EXP 	targetText: autoDraw = False
+53.4689 	EXP 	text: text = ''
+53.4689 	EXP 	instr: autoDraw = True
+53.4689 	EXP 	text: autoDraw = True
+53.8048 	DATA 	Keypress: i
+53.8181 	EXP 	text: text = 'i'
+53.8874 	DATA 	Keypress: n
+53.9012 	EXP 	text: text = 'in'
+54.0218 	DATA 	Keypress: return
+54.0372 	EXP 	New trial (rep=0, index=4): OrderedDict([('prompt', 'Titlecase')])
+54.0521 	EXP 	instr: autoDraw = False
+54.0521 	EXP 	text: autoDraw = False
+54.0521 	EXP 	targetText: text = 'Titlecase'
+54.0521 	EXP 	targetInstr: autoDraw = True
+54.0521 	EXP 	targetText: autoDraw = True
+55.7020 	DATA 	Keypress: rshift
+56.0514 	EXP 	targetInstr: autoDraw = False
+56.0514 	EXP 	targetText: autoDraw = False
+56.0514 	EXP 	targetInstr: autoDraw = False
+56.0514 	EXP 	targetText: autoDraw = False
+56.0514 	EXP 	text: text = ''
+56.0514 	EXP 	instr: autoDraw = True
+56.0514 	EXP 	text: autoDraw = True
+56.4715 	DATA 	Keypress: t
+56.4840 	EXP 	text: text = 't'
+56.8220 	DATA 	Keypress: i
+56.8340 	EXP 	text: text = 'ti'
+57.0701 	DATA 	Keypress: backspace
+57.0849 	EXP 	text: text = 't'
+57.1703 	DATA 	Keypress: backspace
+57.1847 	EXP 	text: text = ''
+57.3359 	DATA 	Keypress: rshift
+57.4219 	DATA 	Keypress: t
+57.4349 	EXP 	text: text = 'T'
+57.6210 	DATA 	Keypress: i
+57.6342 	EXP 	text: text = 'Ti'
+57.7040 	DATA 	Keypress: t
+57.7178 	EXP 	text: text = 'Tit'
+57.8203 	DATA 	Keypress: l
+57.8347 	EXP 	text: text = 'Titl'
+57.9057 	DATA 	Keypress: e
+57.9178 	EXP 	text: text = 'Title'
+58.5381 	DATA 	Keypress: c
+58.5505 	EXP 	text: text = 'Titlec'
+58.6376 	DATA 	Keypress: a
+58.6506 	EXP 	text: text = 'Titleca'
+58.7373 	DATA 	Keypress: s
+58.7505 	EXP 	text: text = 'Titlecas'
+58.7874 	DATA 	Keypress: e
+58.8012 	EXP 	text: text = 'Titlecase'
+58.9200 	DATA 	Keypress: return
+58.9356 	EXP 	instr: autoDraw = False
+58.9356 	EXP 	text: autoDraw = False
+59.2242 	EXP 	window1: mouseVisible = True

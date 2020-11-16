@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+j,11.12299991,type,1,0,5,0,1,4,type,cc,001,2020-06-26_16h16.00.014,inputText,3.1.3,60
+,,this ,1,0,5,1,1,4,this,cc,001,2020-06-26_16h16.00.014,inputText,3.1.3,60
+,,word,1,0,5,2,1,4,word,cc,001,2020-06-26_16h16.00.014,inputText,3.1.3,60
+,,in,1,0,5,3,1,4,in,cc,001,2020-06-26_16h16.00.014,inputText,3.1.3,60
+,,telicase,1,0,5,4,1,4,Titlecase,cc,001,2020-06-26_16h16.00.014,inputText,3.1.3,60

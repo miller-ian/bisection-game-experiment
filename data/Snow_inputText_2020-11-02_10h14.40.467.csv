@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+right,11.24399996,rightright,1,0,5,0,1,4,type,Snow,001,2020-11-02_10h14.40.467,inputText,3.1.3,60
+,,  downdown,1,0,5,1,1,4,this,Snow,001,2020-11-02_10h14.40.467,inputText,3.1.3,60
+,,word,1,0,5,2,1,4,word,Snow,001,2020-11-02_10h14.40.467,inputText,3.1.3,60
+,,in,1,0,5,3,1,4,in,Snow,001,2020-11-02_10h14.40.467,inputText,3.1.3,60
+,,Titlecase,1,0,5,4,1,4,Titlecase,Snow,001,2020-11-02_10h14.40.467,inputText,3.1.3,60

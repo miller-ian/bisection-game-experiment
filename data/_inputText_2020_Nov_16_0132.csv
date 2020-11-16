@@ -1,0 +1,3 @@
+﻿trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instText.started,instText.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,text_2.started,text_2.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,9.091230985999573,None,return,1.0823654100004205,9.091230985999573,None,,,,,,,,001,2020_Nov_16_0132,inputText,2020.2.5,60.008803530976095,
+,,,,,,,,,,10.19412591100081,None,return,0.7693996979996882,10.19412591100081,None,,001,2020_Nov_16_0132,inputText,2020.2.5,60.008803530976095,

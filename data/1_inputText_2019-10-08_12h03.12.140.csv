@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,participant,session,date,expName,psychopyVersion,frameRate
+s,2.136999846,type,1,001,2019-10-08_12h03.12.140,inputText,3.1.3,60
+,,this,1,001,2019-10-08_12h03.12.140,inputText,3.1.3,60
+,,word,1,001,2019-10-08_12h03.12.140,inputText,3.1.3,60
+,,in,1,001,2019-10-08_12h03.12.140,inputText,3.1.3,60
+,,Titlecase,1,001,2019-10-08_12h03.12.140,inputText,3.1.3,60

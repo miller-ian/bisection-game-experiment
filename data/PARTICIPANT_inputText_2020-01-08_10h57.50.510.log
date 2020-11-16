@@ -1,0 +1,117 @@
+0.11600017547607422	EXP	Created Window = Window( name=Window, fullscr=true, color=#808080, units=height, waitBlanking=null, autoLog=true, size=[1267,924] )
+3.2920000553131104	EXP	Created instText = TextStim( name=instText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=In this demo, we show how you can use text compone~, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+3.2930002212524414	EXP	Created targetInstr = TextStim( name=targetInstr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[-0.2,0.2], size=undefined, text=Target word:, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+3.2930002212524414	EXP	Created targetText = TextStim( name=targetText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=default text, font=Arial, color=#FFFFFF, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+3.2940001487731934	EXP	Created instr = TextStim( name=instr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[-0.2,0.2], size=undefined, text=Type the target word below, and press return, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+3.2950000762939453	EXP	Created text = TextStim( name=text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=null, font=Arial, color=#FFFFFF, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+3.3370001316070557	EXP	instText: units = "height"
+3.3370001316070557	EXP	instText: ori = 0
+3.3370001316070557	EXP	instText: opacity = 1
+3.3370001316070557	EXP	instText: pos = [0,0]
+3.3370001316070557	EXP	instText: size = undefined
+3.3370001316070557	EXP	instText: text = "In this demo, we show how you can use text components to write a users keyboard input on screen.\n\nYou will be presented with a target word. Then, in the next routine, you will be asked to type that word.\nWhen you have finished typing the word, press \"return\" to end the trial.\n\n\nPress any key to continue..."
+3.3370001316070557	EXP	instText: font = "Arial"
+3.3370001316070557	EXP	instText: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+3.3370001316070557	EXP	instText: contrast = 1
+3.3370001316070557	EXP	instText: height = 0.05
+3.3370001316070557	EXP	instText: bold = false
+3.3370001316070557	EXP	instText: italic = false
+3.3370001316070557	EXP	instText: alignHoriz = "center"
+3.3370001316070557	EXP	instText: alignVert = "center"
+3.3370001316070557	EXP	instText: wrapWidth = 1
+3.3370001316070557	EXP	instText: flipHoriz = false
+3.3370001316070557	EXP	instText: flipVert = false
+3.3370001316070557	EXP	targetInstr: units = "height"
+3.3370001316070557	EXP	targetInstr: ori = 0
+3.3370001316070557	EXP	targetInstr: opacity = 1
+3.3370001316070557	EXP	targetInstr: pos = [-0.2,0.2]
+3.3370001316070557	EXP	targetInstr: size = undefined
+3.3370001316070557	EXP	targetInstr: text = "Target word:"
+3.3370001316070557	EXP	targetInstr: font = "Arial"
+3.3370001316070557	EXP	targetInstr: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+3.3370001316070557	EXP	targetInstr: contrast = 1
+3.3370001316070557	EXP	targetInstr: height = 0.05
+3.3370001316070557	EXP	targetInstr: bold = false
+3.3370001316070557	EXP	targetInstr: italic = false
+3.3370001316070557	EXP	targetInstr: alignHoriz = "center"
+3.3370001316070557	EXP	targetInstr: alignVert = "center"
+3.3370001316070557	EXP	targetInstr: wrapWidth = 1
+3.3370001316070557	EXP	targetInstr: flipHoriz = false
+3.3370001316070557	EXP	targetInstr: flipVert = false
+3.3370001316070557	EXP	targetText: units = "height"
+3.3370001316070557	EXP	targetText: ori = 0
+3.3370001316070557	EXP	targetText: opacity = 1
+3.3370001316070557	EXP	targetText: pos = [0,0]
+3.3370001316070557	EXP	targetText: size = undefined
+3.3370001316070557	EXP	targetText: text = "default text"
+3.3370001316070557	EXP	targetText: font = "Arial"
+3.3370001316070557	EXP	targetText: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+3.3370001316070557	EXP	targetText: contrast = 1
+3.3370001316070557	EXP	targetText: height = 0.1
+3.3370001316070557	EXP	targetText: bold = false
+3.3370001316070557	EXP	targetText: italic = false
+3.3370001316070557	EXP	targetText: alignHoriz = "center"
+3.3370001316070557	EXP	targetText: alignVert = "center"
+3.3370001316070557	EXP	targetText: wrapWidth = 1
+3.3370001316070557	EXP	targetText: flipHoriz = false
+3.3370001316070557	EXP	targetText: flipVert = false
+3.3370001316070557	EXP	instr: units = "height"
+3.3370001316070557	EXP	instr: ori = 0
+3.3370001316070557	EXP	instr: opacity = 1
+3.3370001316070557	EXP	instr: pos = [-0.2,0.2]
+3.3370001316070557	EXP	instr: size = undefined
+3.3370001316070557	EXP	instr: text = "Type the target word below, and press return"
+3.3370001316070557	EXP	instr: font = "Arial"
+3.3370001316070557	EXP	instr: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+3.3370001316070557	EXP	instr: contrast = 1
+3.3370001316070557	EXP	instr: height = 0.05
+3.3370001316070557	EXP	instr: bold = false
+3.3370001316070557	EXP	instr: italic = false
+3.3370001316070557	EXP	instr: alignHoriz = "center"
+3.3370001316070557	EXP	instr: alignVert = "center"
+3.3370001316070557	EXP	instr: wrapWidth = 1
+3.3370001316070557	EXP	instr: flipHoriz = false
+3.3370001316070557	EXP	instr: flipVert = false
+3.3370001316070557	EXP	text: units = "height"
+3.3370001316070557	EXP	text: ori = 0
+3.3370001316070557	EXP	text: opacity = 1
+3.3370001316070557	EXP	text: pos = [0,0]
+3.3370001316070557	EXP	text: size = undefined
+3.3370001316070557	EXP	text: text = ""
+3.3370001316070557	EXP	text: font = "Arial"
+3.3370001316070557	EXP	text: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+3.3370001316070557	EXP	text: contrast = 1
+3.3370001316070557	EXP	text: height = 0.1
+3.3370001316070557	EXP	text: bold = false
+3.3370001316070557	EXP	text: italic = false
+3.3370001316070557	EXP	text: alignHoriz = "center"
+3.3370001316070557	EXP	text: alignVert = "center"
+3.3370001316070557	EXP	text: wrapWidth = 1
+3.3370001316070557	EXP	text: flipHoriz = false
+3.3370001316070557	EXP	text: flipVert = false
+3.3370001316070557	EXP	instText: autoDraw = true
+7.398000001907349	DATA	Keydown:  
+7.450000047683716	EXP	instText: autoDraw = false
+7.450000047683716	EXP	targetText: text = "type"
+7.450000047683716	EXP	targetInstr: autoDraw = true
+7.450000047683716	EXP	targetText: autoDraw = true
+9.43500018119812	EXP	targetInstr: autoDraw = false
+9.43500018119812	EXP	targetText: autoDraw = false
+9.43500018119812	EXP	text: text = ""
+9.43500018119812	EXP	instr: autoDraw = true
+9.43500018119812	EXP	text: autoDraw = true
+12.583000183105469	DATA	Keydown: f
+12.592000007629395	EXP	text: text = "f"
+13.032000064849854	DATA	Keydown: d
+13.04200005531311	EXP	text: text = "fd"
+13.245000123977661	DATA	Keydown: d
+13.266000032424927	EXP	text: text = "fdd"
+13.456000089645386	DATA	Keydown: f
+13.466000080108643	EXP	text: text = "fddf"
+13.630000114440918	DATA	Keydown: d
+13.641000032424927	EXP	text: text = "fddfd"
+13.708000183105469	DATA	Keydown: f
+13.72000002861023	EXP	text: text = "fddfdf"
+14.736000061035156	DATA	Keydown: Enter
+14.745000123977661	EXP	text: text = "fddfdfnum_enter"
+18.729000091552734	DATA	Keydown: Enter

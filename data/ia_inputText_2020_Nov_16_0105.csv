@@ -1,0 +1,7 @@
+﻿prompt,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instText.started,instText.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,targetInstr.started,targetInstr.stopped,targetText.started,targetText.stopped,instr.started,instr.stopped,text.started,text.stopped,typedWord,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,9.68650901500041,None,return,4.769508880999638,9.68650901500041,None,,,,,,,,,,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,
+type,0,0,0,0,,,,,,,14.485295649001273,None,14.485295649001273,None,16.48616729599962,None,16.48616729599962,None,escapeescapeescapeescapeescapercommandccrcrc,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,
+this,0,1,1,1,,,,,,,45.701235759001065,None,45.701235759001065,None,47.7024032620011,None,47.7024032620011,None,this,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,
+word,0,2,2,2,,,,,,,48.684974193000016,None,48.684974193000016,None,50.6859349919996,None,50.6859349919996,None,word,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,
+in,0,3,3,3,,,,,,,51.46771078799975,None,51.46771078799975,None,53.468899790999785,None,53.468899790999785,None,in,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,
+Titlecase,0,4,4,4,,,,,,,54.05208384800062,None,54.05208384800062,None,56.05138555800113,None,56.05138555800113,None,Titlecase,ia,001,2020_Nov_16_0105,inputText,2020.2.5,59.614451168107834,

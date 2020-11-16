@@ -1,0 +1,20 @@
+3.8355 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C4F40B54E0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C4F40F5630>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.8356 	EXP 	window1: recordFrameIntervals = False
+4.0017 	EXP 	window1: recordFrameIntervals = True
+4.1849 	EXP 	window1: recordFrameIntervals = False
+4.3997 	EXP 	Created instText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+4.4094 	EXP 	Created targetInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='targetInstr', opacity=1.0, ori=0, pos=array([-0.2,  0.2]), rgb=array([255., 255., 255.]), text='Target word:', units='height', win=Window(...), wrapWidth=1)
+4.4289 	EXP 	Created targetText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='targetText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.4371 	EXP 	Created instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instr', opacity=1.0, ori=0, pos=array([-0.2,  0.2]), rgb=array([255., 255., 255.]), text='Type the target word below, and press return', units='height', win=Window(...), wrapWidth=1)
+4.4376 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+4.5515 	EXP 	instText: autoDraw = True
+7.5868 	EXP 	Imported cond.xlsx as conditions, 5 conditions, 1 params
+7.5871 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+7.5873 	EXP 	New trial (rep=0, index=0): OrderedDict([('prompt', 'type')])
+7.6001 	DATA 	Keypress: return
+7.6040 	EXP 	instText: autoDraw = False
+7.6040 	EXP 	targetText: text = 'type'
+7.6040 	EXP 	targetInstr: autoDraw = True
+7.6040 	EXP 	targetText: autoDraw = True
+8.5659 	DATA 	Keypress: escape
+8.7690 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,6 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+space,26.25600004,type my little fingers to death if you wish,1,0,5,0,1,4,type,h,001,2020-10-21_15h25.37.464,inputText,3.1.3,60
+,,this isnapostrophet my first rodeoapostropheapostrophe,1,0,5,1,1,4,this,h,001,2020-10-21_15h25.37.464,inputText,3.1.3,60
+,,APOSTROPHEwordAPOSTROPHE,1,0,5,2,1,4,word,h,001,2020-10-21_15h25.37.464,inputText,3.1.3,60
+,,slashin,1,0,5,3,1,4,in,h,001,2020-10-21_15h25.37.464,inputText,3.1.3,60
+,,backslashTitleCase,1,0,5,4,1,4,Titlecase,h,001,2020-10-21_15h25.37.464,inputText,3.1.3,60

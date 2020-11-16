@@ -1,0 +1,3 @@
+key_resp.keys,key_resp.rt,typedWord,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,prompt,participant,session,date,expName,psychopyVersion,frameRate
+space,1.252000093,type,1,0,5,0,1,4,type,j,001,2020-09-30_13h39.26.252,inputText,3.1.3,60
+,,this,1,0,5,1,1,4,this,j,001,2020-09-30_13h39.26.252,inputText,3.1.3,60

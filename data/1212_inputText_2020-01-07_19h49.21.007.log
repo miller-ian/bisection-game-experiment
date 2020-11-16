@@ -1,0 +1,131 @@
+0.13000011444091797	EXP	Created Window = Window( name=Window, fullscr=true, color=#808080, units=height, waitBlanking=null, autoLog=true, size=[1920,966] )
+2.7290000915527344	DATA	Keydown: 1
+2.815999984741211	DATA	Keydown: 2
+3.008000135421753	DATA	Keydown: 1
+3.0390000343322754	DATA	Keydown: 2
+3.328000068664551	DATA	Keydown: Enter
+5.169000148773193	EXP	Created instText = TextStim( name=instText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=In this demo, we show how you can use text compone~, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+5.171000003814697	EXP	Created targetInstr = TextStim( name=targetInstr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[-0.2,0.2], size=undefined, text=Target word:, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+5.172000169754028	EXP	Created targetText = TextStim( name=targetText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=default text, font=Arial, color=#FFFFFF, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+5.17300009727478	EXP	Created instr = TextStim( name=instr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[-0.2,0.2], size=undefined, text=Type the target word below, and press return, font=Arial, color=#FFFFFF, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+5.174000024795532	EXP	Created text = TextStim( name=text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=null, font=Arial, color=#FFFFFF, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=center, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+5.208000183105469	EXP	instText: units = "height"
+5.208000183105469	EXP	instText: ori = 0
+5.208000183105469	EXP	instText: opacity = 1
+5.208000183105469	EXP	instText: pos = [0,0]
+5.208000183105469	EXP	instText: size = undefined
+5.208000183105469	EXP	instText: text = "In this demo, we show how you can use text components to write a users keyboard input on screen.\n\nYou will be presented with a target word. Then, in the next routine, you will be asked to type that word.\nWhen you have finished typing the word, press \"return\" to end the trial.\n\n\nPress any key to continue..."
+5.208000183105469	EXP	instText: font = "Arial"
+5.208000183105469	EXP	instText: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+5.208000183105469	EXP	instText: contrast = 1
+5.208000183105469	EXP	instText: height = 0.05
+5.208000183105469	EXP	instText: bold = false
+5.208000183105469	EXP	instText: italic = false
+5.208000183105469	EXP	instText: alignHoriz = "center"
+5.208000183105469	EXP	instText: alignVert = "center"
+5.208000183105469	EXP	instText: wrapWidth = 1
+5.208000183105469	EXP	instText: flipHoriz = false
+5.208000183105469	EXP	instText: flipVert = false
+5.208000183105469	EXP	targetInstr: units = "height"
+5.208000183105469	EXP	targetInstr: ori = 0
+5.208000183105469	EXP	targetInstr: opacity = 1
+5.208000183105469	EXP	targetInstr: pos = [-0.2,0.2]
+5.208000183105469	EXP	targetInstr: size = undefined
+5.208000183105469	EXP	targetInstr: text = "Target word:"
+5.208000183105469	EXP	targetInstr: font = "Arial"
+5.208000183105469	EXP	targetInstr: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+5.208000183105469	EXP	targetInstr: contrast = 1
+5.208000183105469	EXP	targetInstr: height = 0.05
+5.208000183105469	EXP	targetInstr: bold = false
+5.208000183105469	EXP	targetInstr: italic = false
+5.208000183105469	EXP	targetInstr: alignHoriz = "center"
+5.208000183105469	EXP	targetInstr: alignVert = "center"
+5.208000183105469	EXP	targetInstr: wrapWidth = 1
+5.208000183105469	EXP	targetInstr: flipHoriz = false
+5.208000183105469	EXP	targetInstr: flipVert = false
+5.208000183105469	EXP	targetText: units = "height"
+5.208000183105469	EXP	targetText: ori = 0
+5.208000183105469	EXP	targetText: opacity = 1
+5.208000183105469	EXP	targetText: pos = [0,0]
+5.208000183105469	EXP	targetText: size = undefined
+5.208000183105469	EXP	targetText: text = "default text"
+5.208000183105469	EXP	targetText: font = "Arial"
+5.208000183105469	EXP	targetText: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+5.208000183105469	EXP	targetText: contrast = 1
+5.208000183105469	EXP	targetText: height = 0.1
+5.208000183105469	EXP	targetText: bold = false
+5.208000183105469	EXP	targetText: italic = false
+5.208000183105469	EXP	targetText: alignHoriz = "center"
+5.208000183105469	EXP	targetText: alignVert = "center"
+5.208000183105469	EXP	targetText: wrapWidth = 1
+5.208000183105469	EXP	targetText: flipHoriz = false
+5.208000183105469	EXP	targetText: flipVert = false
+5.208000183105469	EXP	instr: units = "height"
+5.208000183105469	EXP	instr: ori = 0
+5.208000183105469	EXP	instr: opacity = 1
+5.208000183105469	EXP	instr: pos = [-0.2,0.2]
+5.208000183105469	EXP	instr: size = undefined
+5.208000183105469	EXP	instr: text = "Type the target word below, and press return"
+5.208000183105469	EXP	instr: font = "Arial"
+5.208000183105469	EXP	instr: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+5.208000183105469	EXP	instr: contrast = 1
+5.208000183105469	EXP	instr: height = 0.05
+5.208000183105469	EXP	instr: bold = false
+5.208000183105469	EXP	instr: italic = false
+5.208000183105469	EXP	instr: alignHoriz = "center"
+5.208000183105469	EXP	instr: alignVert = "center"
+5.208000183105469	EXP	instr: wrapWidth = 1
+5.208000183105469	EXP	instr: flipHoriz = false
+5.208000183105469	EXP	instr: flipVert = false
+5.208000183105469	EXP	text: units = "height"
+5.208000183105469	EXP	text: ori = 0
+5.208000183105469	EXP	text: opacity = 1
+5.208000183105469	EXP	text: pos = [0,0]
+5.208000183105469	EXP	text: size = undefined
+5.208000183105469	EXP	text: text = ""
+5.208000183105469	EXP	text: font = "Arial"
+5.208000183105469	EXP	text: color = {"_hex":"#FFFFFF","_rgb":[1,1,1]}
+5.208000183105469	EXP	text: contrast = 1
+5.208000183105469	EXP	text: height = 0.1
+5.208000183105469	EXP	text: bold = false
+5.208000183105469	EXP	text: italic = false
+5.208000183105469	EXP	text: alignHoriz = "center"
+5.208000183105469	EXP	text: alignVert = "center"
+5.208000183105469	EXP	text: wrapWidth = 1
+5.208000183105469	EXP	text: flipHoriz = false
+5.208000183105469	EXP	text: flipVert = false
+5.208000183105469	EXP	instText: autoDraw = true
+15.671000003814697	DATA	Keydown: u
+15.818000078201294	EXP	instText: autoDraw = false
+15.818000078201294	EXP	targetText: text = "type"
+15.818000078201294	EXP	targetInstr: autoDraw = true
+15.818000078201294	EXP	targetText: autoDraw = true
+15.818000078201294	DATA	Keydown: j
+17.703999996185303	EXP	targetInstr: autoDraw = false
+17.703999996185303	EXP	targetText: autoDraw = false
+17.703999996185303	EXP	text: text = ""
+17.703999996185303	EXP	instr: autoDraw = true
+17.703999996185303	EXP	text: autoDraw = true
+17.703999996185303	EXP	text: text = "j"
+19.23900008201599	DATA	Keydown: Backspace
+19.246999979019165	EXP	text: text = ""
+19.687000036239624	DATA	Keydown: t
+19.712000131607056	EXP	text: text = "t"
+20.16700005531311	DATA	Keydown: y
+20.180999994277954	EXP	text: text = "tz"
+20.496000051498413	DATA	Keydown: p
+20.498000144958496	EXP	text: text = "tzp"
+20.799000024795532	DATA	Keydown: Backspace
+20.814000129699707	EXP	text: text = "tz"
+20.9760000705719	DATA	Keydown: Backspace
+20.98099994659424	EXP	text: text = "t"
+23.60800004005432	DATA	Keydown: z
+23.61400008201599	EXP	text: text = "ty"
+23.865000009536743	DATA	Keydown: p
+23.897000074386597	EXP	text: text = "typ"
+24.223000049591064	DATA	Keydown: Enter
+26.064000129699707	DATA	Keydown: Enter
+27.006999969482422	DATA	Keydown: p
+27.3270001411438	DATA	Keydown: a
+27.432000160217285	DATA	Keydown: s
+27.51900005340576	DATA	Keydown: d
