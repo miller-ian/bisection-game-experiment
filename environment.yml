@@ -1,0 +1,9 @@
+name: bisection_game
+
+dependencies:
+  - pip
+  - python>=3.7
+  - wheel
+
+  - pip:
+    - psychopy

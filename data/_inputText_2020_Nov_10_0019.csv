@@ -1,7 +1,0 @@
-﻿prompt,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instText.started,instText.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,targetInstr.started,targetInstr.stopped,targetText.started,targetText.stopped,instr.started,instr.stopped,text.started,text.stopped,typedWord,participant,session,date,expName,psychopyVersion,frameRate,
-,,,,,8.241036114981398,None,return,8.632398223009659,8.241036114981398,None,,,,,,,,,,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,
-type,0,0,0,0,,,,,,,16.929099122993648,None,16.929099122993648,None,18.89588364897645,None,18.89588364897645,None,type,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,
-this,0,1,1,1,,,,,,,22.261615492985584,None,22.261615492985584,None,24.26315343598253,None,24.26315343598253,None,this,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,
-word,0,2,2,2,,,,,,,25.261667447979562,None,25.261667447979562,None,27.26261376097682,None,27.26261376097682,None,word,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,
-in,0,3,3,3,,,,,,,28.24565033899853,None,28.24565033899853,None,30.245640911976807,None,30.245640911976807,None,in,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,
-Titlecase,0,4,4,4,,,,,,,31.062351380998734,None,31.062351380998734,None,33.0630705379881,None,33.0630705379881,None,Titlecase,,001,2020_Nov_10_0019,inputText,2020.2.5,60.168952135260554,

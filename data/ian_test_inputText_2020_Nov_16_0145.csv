@@ -1,0 +1,5 @@
+﻿trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instText.started,instText.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,text_2.started,text_2.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,instr.started,instr.stopped,text.started,text.stopped,feedback.started,feedback.stopped,typedWord,game_over_text.started,game_over_text.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,8.28623030199924,None,return,0.9705023790011182,8.28623030199924,None,,,,,,,,,,,,,,,,ian_test,001,2020_Nov_16_0145,inputText,2020.2.5,60.523295915639785,
+,,,,,,,,,,9.269554402999347,None,return,0.5360517669996625,9.269554402999347,None,,,,,,,,,,ian_test,001,2020_Nov_16_0145,inputText,2020.2.5,60.523295915639785,
+0,0,0,0,,,,,,,,,,,,,9.820825316999617,None,9.820825316999617,None,9.820825316999617,None,81,,,ian_test,001,2020_Nov_16_0145,inputText,2020.2.5,60.523295915639785,
+,,,,,,,,,,,,,,,,,,,,,,,26.718746811999154,None,,,,,,,
