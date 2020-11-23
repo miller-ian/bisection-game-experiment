@@ -110,13 +110,13 @@
       <CodeComponent name="code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = random.randint(1, 100)" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = random.randint(1, 1000)" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="modify = false;&amp;#10;text.text = '';" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="modify = False&amp;#10;text.text = ''&amp;#10;event.clearEvents('keyboard')&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Both" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="keys = event.getKeys()&amp;#10;if len(keys):&amp;#10;    if 'space' in keys:&amp;#10;        text.text = text.text + ' '&amp;#10;    elif 'backspace' in keys:&amp;#10;        text.text = text.text[:-1]&amp;#10;    elif 'lshift' in keys or 'rshift' in keys:&amp;#10;        modify = True&amp;#10;    elif 'return' in keys:&amp;#10;        if(int(text.text) == answer):&amp;#10;            continueRoutine = False&amp;#10;        else:&amp;#10;            continueGame += 1&amp;#10;            if(int(text.text) &gt; answer):&amp;#10;                feedback.text = &quot;Too high!&quot;&amp;#10;            else:&amp;#10;                feedback.text = &quot;Too low!&quot;&amp;#10;            text.text = &quot;&quot;&amp;#10;    else:&amp;#10;        if modify:&amp;#10;            text.text = text.text + keys[0].upper()&amp;#10;            modify = False&amp;#10;        else:&amp;#10;            text.text = text.text + keys[0]" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="let theseKeys = psychoJS.eventManager.getKeys();&amp;#10;if (theseKeys.length &gt; 0) {  // at least one key was pressed&amp;#10;  textAdd = theseKeys[theseKeys.length-1]; &amp;#10;  }&amp;#10;&amp;#10;&amp;#10;if (textAdd === 'return') {&amp;#10;    textAdd = '';  // Add nothing&amp;#10;    continueRoutine = false;  // End routine (if that is what you want)&amp;#10;} else if (textAdd === 'space') {&amp;#10;    textAdd = ' ';  // Add a space&amp;#10;} else if (textAdd === 'backspace') {&amp;#10;    text.text = text.text.slice(0, -1);&amp;#10;    textAdd = undefined;&amp;#10;} else if (['lshift', 'rshift'].includes(textAdd)) {&amp;#10;    modify = true;&amp;#10;} else if (textAdd !== undefined) {&amp;#10;    if (modify) {&amp;#10;        text.text = text.text + textAdd.toUpperCase();&amp;#10;        modify = false;&amp;#10;    } else {&amp;#10;        text.text = text.text + textAdd&amp;#10;    }&amp;#10;    textAdd = undefined;&amp;#10;}" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="keys = event.getKeys()&amp;#10;possibleKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']&amp;#10;if len(keys):&amp;#10;    if 'space' in keys:&amp;#10;        text.text = text.text + ' '&amp;#10;    elif 'backspace' in keys:&amp;#10;        text.text = text.text[:-1]&amp;#10;    elif 'lshift' in keys or 'rshift' in keys:&amp;#10;        modify = True&amp;#10;    elif 'return' in keys:&amp;#10;        if(int(text.text) == answer):&amp;#10;            continueRoutine = False&amp;#10;        else:&amp;#10;            continueGame += 1&amp;#10;            if(int(text.text) &gt; answer):&amp;#10;                feedback.text = &quot;Too high!&quot;&amp;#10;            else:&amp;#10;                feedback.text = &quot;Too low!&quot;&amp;#10;            text.text = &quot;&quot;&amp;#10;    elif (keys[0] in possibleKeys):&amp;#10;        if modify:&amp;#10;            text.text = text.text + keys[0].upper()&amp;#10;            modify = False&amp;#10;        else:&amp;#10;            text.text = text.text + keys[0]" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="let theseKeys = psychoJS.eventManager.getKeys();&amp;#10;let possibleKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']&amp;#10;if (theseKeys.length &gt; 0) {  // at least one key was pressed&amp;#10;  textAdd = theseKeys[theseKeys.length-1]; &amp;#10;  }&amp;#10;&amp;#10;&amp;#10;if (textAdd === 'return') {&amp;#10;    textAdd = '';  // Add nothing&amp;#10;    continueRoutine = false;  // End routine (if that is what you want)&amp;#10;} else if (textAdd === 'space') {&amp;#10;    textAdd = ' ';  // Add a space&amp;#10;} else if (textAdd === 'backspace') {&amp;#10;    text.text = text.text.slice(0, -1);&amp;#10;    textAdd = undefined;&amp;#10;} else if (['lshift', 'rshift'].includes(textAdd)) {&amp;#10;    modify = true;&amp;#10;} else if (textAdd !== undefined) {&amp;#10;    if (possibleKeys.includes(textAdd) {&amp;#10;    &amp;#10;        if (modify) {&amp;#10;            text.text = text.text + textAdd.toUpperCase();&amp;#10;            modify = false;&amp;#10;        } else {&amp;#10;            text.text = text.text + textAdd&amp;#10;        }&amp;#10;        textAdd = undefined;&amp;#10;    }&amp;#10;    }" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="psychoJS.experiment.addData(&quot;typedWord&quot;, text.text)&amp;#10;text.setText('')  // empty the onscreen text ready for next input" valType="extendedCode"/>
@@ -146,12 +146,12 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this game you will be asked to guess a random number from 1 to 100, inclusive. &amp;#10;&amp;#10;Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. &amp;#10;&amp;#10;&amp;#10;Press any key to continue..." valType="str"/>
+        <Param name="text" updates="constant" val="In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). &amp;#10;&amp;#10;Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. &amp;#10;&amp;#10;Please note that you must use the number row to type in guesses (not the number pad)! &amp;#10;&amp;#10;Press the space bar to continue..." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp">
-        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', " valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -190,12 +190,12 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Type in your guess and press “enter” in order to submit that guess.&amp;#10;&amp;#10;You will have 3 seconds from your last hint to enter your next guess or the game will timeout and you automatically lose.&amp;#10;&amp;#10;Press any key to continue…&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Type in your guess and press “enter” in order to submit that guess.&amp;#10;&amp;#10;Your final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. &amp;#10;&amp;#10;Press the space bar to start the game…&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_2">
-        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', " valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -222,7 +222,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
         <Param name="name" updates="None" val="game_over_text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -232,12 +232,30 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Congrats! You win!" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Congrats! You win!&amp;#10;&amp;#10;Please type the letter “y” if you are familiar with binary or bisection search. &amp;#10;Type the letter “n” if you have never heard of or do not know what binary or bisection search is." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'y','n'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
     </Routine>
   </Routines>
   <Flow>

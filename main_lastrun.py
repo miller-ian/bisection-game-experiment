@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.5),
-    on Tue Nov 17 00:24:22 2020
+    on Sun Nov 22 23:18:08 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/imiller/Desktop/school/senior-class/6.804/bisection-game-experiment/main_lastrun.py',
+    originPath='/Users/imiller/Desktop/school/senior-class/6.804/guess-the-number/main_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -83,7 +83,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
 instText = visual.TextStim(win=win, name='instText',
-    text='In this game you will be asked to guess a random number from 1 to 100, inclusive. \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\n\nPress any key to continue...',
+    text='In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -94,7 +94,7 @@ key_resp = keyboard.Keyboard()
 # Initialize components for Routine "instruction_pt2"
 instruction_pt2Clock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Type in your guess and press “enter” in order to submit that guess.\n\nYou will have 3 seconds from your last hint to enter your next guess or the game will timeout and you automatically lose.\n\nPress any key to continue…\n',
+    text='Type in your guess and press “enter” in order to submit that guess.\n\nYour final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. \n\nPress the space bar to start the game…\n',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -127,17 +127,18 @@ feedback = visual.TextStim(win=win, name='feedback',
     depth=-2.0);
 import random
 continueGame = 1
-answer = random.randint(1, 100)
+answer = random.randint(1, 1000)
 
 # Initialize components for Routine "game_over"
 game_overClock = core.Clock()
 game_over_text = visual.TextStim(win=win, name='game_over_text',
-    text='Congrats! You win!',
+    text='Congrats! You win!\n\nPlease type the letter “y” if you are familiar with binary or bisection search. \nType the letter “n” if you have never heard of or do not know what binary or bisection search is.',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+key_resp_3 = keyboard.Keyboard()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -196,7 +197,7 @@ while continueRoutine:
         win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp.getKeys(keyList=None, waitRelease=False)
+        theseKeys = key_resp.getKeys(keyList=['enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], waitRelease=False)
         _key_resp_allKeys.extend(theseKeys)
         if len(_key_resp_allKeys):
             key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
@@ -292,7 +293,7 @@ while continueRoutine:
         win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp_2.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp_2.getKeys(keyList=None, waitRelease=False)
+        theseKeys = key_resp_2.getKeys(keyList=['enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], waitRelease=False)
         _key_resp_2_allKeys.extend(theseKeys)
         if len(_key_resp_2_allKeys):
             key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
@@ -412,6 +413,7 @@ for thisTrial in trials:
             win.timeOnFlip(feedback, 'tStartRefresh')  # time at next scr refresh
             feedback.setAutoDraw(True)
         keys = event.getKeys()
+        possibleKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
         if len(keys):
             if 'space' in keys:
                 text.text = text.text + ' '
@@ -429,7 +431,7 @@ for thisTrial in trials:
                     else:
                         feedback.text = "Too low!"
                     text.text = ""
-            else:
+            elif (keys[0] in possibleKeys):
                 if modify:
                     text.text = text.text + keys[0].upper()
                     modify = False
@@ -473,10 +475,12 @@ for thisTrial in trials:
 
 # ------Prepare to start Routine "game_over"-------
 continueRoutine = True
-routineTimer.add(3.000000)
 # update component parameters for each repeat
+key_resp_3.keys = []
+key_resp_3.rt = []
+_key_resp_3_allKeys = []
 # keep track of which components have finished
-game_overComponents = [game_over_text]
+game_overComponents = [game_over_text, key_resp_3]
 for thisComponent in game_overComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -491,7 +495,7 @@ game_overClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
 # -------Run Routine "game_over"-------
-while continueRoutine and routineTimer.getTime() > 0:
+while continueRoutine:
     # get current time
     t = game_overClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=game_overClock)
@@ -507,14 +511,28 @@ while continueRoutine and routineTimer.getTime() > 0:
         game_over_text.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(game_over_text, 'tStartRefresh')  # time at next scr refresh
         game_over_text.setAutoDraw(True)
-    if game_over_text.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > game_over_text.tStartRefresh + 3-frameTolerance:
-            # keep track of stop time/frame for later
-            game_over_text.tStop = t  # not accounting for scr refresh
-            game_over_text.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(game_over_text, 'tStopRefresh')  # time at next scr refresh
-            game_over_text.setAutoDraw(False)
+    
+    # *key_resp_3* updates
+    waitOnFlip = False
+    if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_3.frameNStart = frameN  # exact frame index
+        key_resp_3.tStart = t  # local t and not account for scr refresh
+        key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+        key_resp_3.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_3.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_3.getKeys(keyList=['y', 'n'], waitRelease=False)
+        _key_resp_3_allKeys.extend(theseKeys)
+        if len(_key_resp_3_allKeys):
+            key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+            key_resp_3.rt = _key_resp_3_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -539,6 +557,17 @@ for thisComponent in game_overComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('game_over_text.started', game_over_text.tStartRefresh)
 thisExp.addData('game_over_text.stopped', game_over_text.tStopRefresh)
+# check responses
+if key_resp_3.keys in ['', [], None]:  # No response was made
+    key_resp_3.keys = None
+thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+if key_resp_3.keys != None:  # we had a response
+    thisExp.addData('key_resp_3.rt', key_resp_3.rt)
+thisExp.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+thisExp.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
+thisExp.nextEntry()
+# the Routine "game_over" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting

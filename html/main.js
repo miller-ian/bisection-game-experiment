@@ -29,7 +29,7 @@ psychoJS.openWindow({
 // store info about the experiment session:
 let expName = 'main';  // from the Builder filename that created this script
 let expInfo = {'participant': '', 'session': '001'};
-let continueGame = 1;
+
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({
   dictionary: expInfo,
@@ -67,7 +67,7 @@ psychoJS.start({
   });
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
-var frameDur;
+
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
@@ -109,7 +109,7 @@ function experimentInit() {
   instText = new visual.TextStim({
     win: psychoJS.window,
     name: 'instText',
-    text: 'In this game you will be asked to guess a random number from 1 to 100, inclusive. \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\n\nPress any key to continue...',
+    text: 'In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -124,7 +124,7 @@ function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: 'Type in your guess and press “enter” in order to submit that guess.\n\nYou will have 3 seconds from your last hint to enter your next guess or the game will timeout and you automatically lose.\n\nPress any key to continue…\n',
+    text: 'Type in your guess and press “enter” in order to submit that guess.\n\nYour final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. \n\nPress the space bar to start the game…\n',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -174,13 +174,15 @@ function experimentInit() {
   game_over_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'game_over_text',
-    text: 'Congrats! You win!',
+    text: 'Congrats! You win!\n\nPlease type the letter “y” if you are familiar with binary or bisection search. \nType the letter “n” if you have never heard of or do not know what binary or bisection search is.',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
+  
+  key_resp_3 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Create some handy timers
   globalClock = new util.Clock();  // to track the time since experiment started
@@ -251,7 +253,7 @@ function instructionsRoutineEachFrame(snapshot) {
     }
 
     if (key_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp.getKeys({keyList: [], waitRelease: false});
+      let theseKeys = key_resp.getKeys({keyList: ['enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], waitRelease: false});
       _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
       if (_key_resp_allKeys.length > 0) {
         key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
@@ -308,8 +310,7 @@ function instructionsRoutineEnd(snapshot) {
     return Scheduler.Event.NEXT;
   };
 }
-var _key_resp_2_allKeys;
-var instruction_pt2Components;
+
 function instruction_pt2RoutineBegin(snapshot) {
   return function () {
     //------Prepare to start Routine 'instruction_pt2'-------
@@ -367,7 +368,7 @@ function instruction_pt2RoutineEachFrame(snapshot) {
     }
 
     if (key_resp_2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_2.getKeys({keyList: [], waitRelease: false});
+      let theseKeys = key_resp_2.getKeys({keyList: ['enter', 'return', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], waitRelease: false});
       _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
       if (_key_resp_2_allKeys.length > 0) {
         key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
@@ -487,7 +488,7 @@ function trialRoutineBegin(snapshot) {
 }
 
 var textAdd;
-var answer = Math.floor(Math.random() * (100)) + 1;
+var answer = Math.floor(Math.random() * (1000)) + 1;
 function trialRoutineEachFrame(snapshot) {
   return function () {
     //------Loop for each frame of Routine 'trial'-------
@@ -527,6 +528,7 @@ function trialRoutineEachFrame(snapshot) {
     }
 
     let theseKeys = psychoJS.eventManager.getKeys();
+    let possibleKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     if (theseKeys.length > 0) {  // at least one key was pressed
       textAdd = theseKeys[theseKeys.length-1]; 
       }
@@ -556,14 +558,17 @@ function trialRoutineEachFrame(snapshot) {
     } else if (['lshift', 'rshift'].includes(textAdd)) {
         modify = true;
     } else if (textAdd !== undefined) {
-        if (modify) {
-            text.text = text.text + textAdd.toUpperCase();
-            modify = false;
-        } else {
-            text.text = text.text + textAdd
+        if (possibleKeys.includes(textAdd)) {
+        
+            if (modify) {
+                text.text = text.text + textAdd.toUpperCase();
+                modify = false;
+            } else {
+                text.text = text.text + textAdd
+            }
+            textAdd = undefined;
         }
-        textAdd = undefined;
-    }
+        }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -606,18 +611,23 @@ function trialRoutineEnd(snapshot) {
     return Scheduler.Event.NEXT;
   };
 }
-var game_overComponents;
+var _key_resp_3_allKeys;
+var key_resp_3;
+
 function game_overRoutineBegin(snapshot) {
   return function () {
     //------Prepare to start Routine 'game_over'-------
     t = 0;
     game_overClock.reset(); // clock
     frameN = -1;
-    routineTimer.add(3.000000);
     // update component parameters for each repeat
+    key_resp_3.keys = undefined;
+    key_resp_3.rt = undefined;
+    _key_resp_3_allKeys = [];
     // keep track of which components have finished
     game_overComponents = [];
     game_overComponents.push(game_over_text);
+    game_overComponents.push(key_resp_3);
     
     for (const thisComponent of game_overComponents)
       if ('status' in thisComponent)
@@ -628,7 +638,7 @@ function game_overRoutineBegin(snapshot) {
     }
   };
 }
-var frameRemains;
+
 function game_overRoutineEachFrame(snapshot) {
   return function () {
     //------Loop for each frame of Routine 'game_over'-------
@@ -647,10 +657,30 @@ function game_overRoutineEachFrame(snapshot) {
       game_over_text.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if ((game_over_text.status === PsychoJS.Status.STARTED || game_over_text.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
-      game_over_text.setAutoDraw(false);
+    
+    // *key_resp_3* updates
+    if (t >= 0.0 && key_resp_3.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp_3.tStart = t;  // (not accounting for frame time here)
+      key_resp_3.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp_3.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_3.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_3.clearEvents(); });
     }
+
+    if (key_resp_3.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_3.getKeys({keyList: ['y', 'n'], waitRelease: false});
+      _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
+      if (_key_resp_3_allKeys.length > 0) {
+        key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_3.rt = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -669,7 +699,7 @@ function game_overRoutineEachFrame(snapshot) {
       }
     
     // refresh the screen if continuing
-    if (continueRoutine && routineTimer.getTime() > 0) {
+    if (continueRoutine) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -685,6 +715,16 @@ function game_overRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     }
+    psychoJS.experiment.addData('key_resp_3.keys', key_resp_3.keys);
+    if (typeof key_resp_3.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_3.rt', key_resp_3.rt);
+        routineTimer.reset();
+        }
+    
+    key_resp_3.stop();
+    // the Routine "game_over" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
     return Scheduler.Event.NEXT;
   };
 }

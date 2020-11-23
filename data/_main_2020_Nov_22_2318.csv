@@ -1,0 +1,5 @@
+﻿trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instText.started,instText.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,text_2.started,text_2.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,instr.started,instr.stopped,text.started,text.stopped,feedback.started,feedback.stopped,typedWord,game_over_text.started,game_over_text.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,6.323618930007797,None,space,0.4037960539571941,6.323618930007797,None,,,,,,,,,,,,,,,,,,,,,001,2020_Nov_22_2318,main,2020.2.5,60.02227992288437,
+,,,,,,,,,,6.7576829610043205,None,space,0.1777227389975451,6.7576829610043205,None,,,,,,,,,,,,,,,001,2020_Nov_22_2318,main,2020.2.5,60.02227992288437,
+0,0,0,0,,,,,,,,,,,,,6.958059853990562,None,6.958059853990562,None,6.958059853990562,None,253,,,,,,,,001,2020_Nov_22_2318,main,2020.2.5,60.02227992288437,
+,,,,,,,,,,,,,,,,,,,,,,,31.806457442988176,None,n,5.144960891979281,31.806457442988176,None,,001,2020_Nov_22_2318,main,2020.2.5,60.02227992288437,

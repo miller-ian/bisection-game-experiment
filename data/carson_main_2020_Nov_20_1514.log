@@ -1,0 +1,86 @@
+0.2697 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.9750 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x140706ba8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x140a0bf28>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.9752 	EXP 	window1: mouseVisible = True
+5.9752 	EXP 	window1: recordFrameIntervals = False
+6.1408 	EXP 	window1: recordFrameIntervals = True
+6.3237 	EXP 	window1: recordFrameIntervals = False
+6.4502 	EXP 	Created instText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.4956 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.5312 	EXP 	Created instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instr', opacity=1.0, ori=0, pos=array([-0.2,  0.2]), rgb=array([255., 255., 255.]), text='Type your guess below and press “enter” ', units='height', win=Window(...), wrapWidth=1)
+6.5323 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.5333 	EXP 	Created feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback', opacity=1.0, ori=0, pos=array([0. , 0.1]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.5448 	EXP 	Created game_over_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='game_over_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Congrats! You win!', units='height', win=Window(...), wrapWidth=1)
+6.5574 	EXP 	instText: autoDraw = True
+8.2152 	DATA 	Keypress: space
+8.2239 	EXP 	instText: autoDraw = False
+8.2239 	EXP 	text_2: autoDraw = True
+9.2764 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+9.2766 	EXP 	New trial (rep=0, index=0): None
+9.2782 	DATA 	Keypress: space
+9.2908 	EXP 	text_2: autoDraw = False
+9.2908 	EXP 	text: text = ''
+9.2908 	EXP 	instr: autoDraw = True
+9.2908 	EXP 	text: autoDraw = True
+9.2908 	EXP 	feedback: autoDraw = True
+9.6928 	DATA 	Keypress: 5
+9.7079 	EXP 	text: text = '5'
+9.8259 	DATA 	Keypress: 0
+9.8407 	EXP 	text: text = '50'
+10.0942 	DATA 	Keypress: space
+10.1240 	EXP 	text: text = '50 '
+11.1929 	DATA 	Keypress: backspace
+11.2077 	EXP 	text: text = '50'
+11.7082 	DATA 	Keypress: return
+11.7245 	EXP 	feedback: text = 'Too low!'
+11.7245 	EXP 	text: text = ''
+13.8919 	DATA 	Keypress: 7
+13.9068 	EXP 	text: text = '7'
+14.0925 	DATA 	Keypress: 5
+14.1078 	EXP 	text: text = '75'
+14.4754 	DATA 	Keypress: return
+14.4908 	EXP 	feedback: text = 'Too low!'
+14.4908 	EXP 	text: text = ''
+16.5266 	DATA 	Keypress: 8
+16.5569 	EXP 	text: text = '8'
+17.0086 	DATA 	Keypress: 3
+17.0244 	EXP 	text: text = '83'
+17.0269 	DATA 	Keypress: 4
+17.0409 	EXP 	text: text = '834'
+18.1754 	DATA 	Keypress: backspace
+18.1909 	EXP 	text: text = '83'
+18.3754 	DATA 	Keypress: return
+18.3912 	EXP 	feedback: text = 'Too low!'
+18.3912 	EXP 	text: text = ''
+20.0592 	DATA 	Keypress: 9
+20.0736 	EXP 	text: text = '9'
+20.6087 	DATA 	Keypress: 2
+20.6236 	EXP 	text: text = '92'
+20.9087 	DATA 	Keypress: return
+20.9241 	EXP 	feedback: text = 'Too high!'
+20.9241 	EXP 	text: text = ''
+22.9092 	DATA 	Keypress: 8
+22.9239 	EXP 	text: text = '8'
+23.2921 	DATA 	Keypress: 7
+23.3073 	EXP 	text: text = '87'
+23.5246 	DATA 	Keypress: return
+23.5404 	EXP 	feedback: text = 'Too high!'
+23.5404 	EXP 	text: text = ''
+25.8256 	DATA 	Keypress: 8
+25.8408 	EXP 	text: text = '8'
+26.2094 	DATA 	Keypress: 5
+26.2237 	EXP 	text: text = '85'
+26.4085 	DATA 	Keypress: return
+26.4235 	EXP 	feedback: text = 'Too low!'
+26.4235 	EXP 	text: text = ''
+27.5429 	DATA 	Keypress: 8
+27.5737 	EXP 	text: text = '8'
+27.6938 	DATA 	Keypress: 6
+27.7234 	EXP 	text: text = '86'
+27.9418 	DATA 	Keypress: return
+27.9575 	EXP 	instr: autoDraw = False
+27.9575 	EXP 	text: autoDraw = False
+27.9575 	EXP 	feedback: autoDraw = False
+27.9575 	EXP 	game_over_text: autoDraw = True
+30.9575 	EXP 	game_over_text: autoDraw = False
+30.9575 	EXP 	game_over_text: autoDraw = False
+31.2351 	EXP 	window1: mouseVisible = True
