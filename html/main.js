@@ -67,7 +67,7 @@ psychoJS.start({
   });
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
-
+var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
