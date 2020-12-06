@@ -48,6 +48,7 @@ def parse(f_name):
     indicesOfResponses = indicesOfResponses[2:]
     indicesOfResponsesCopy = indicesOfResponses.copy()
     count = 0
+    participant_responses = []
     for line in lines:
         if "EXP	text:" in line and "text =" in line:
             colon = line.find(":")
@@ -57,9 +58,10 @@ def parse(f_name):
                 indicesOfResponses.pop(0)
                 equalsSign = line.find("=")
                 key = line[equalsSign + 2:]
-                participant.responses.append(key)
-
+                participant_responses.append(key)
             count += 1
+    participant.responses = participant_responses
+
     indicesOfSubmit = []
     for index in indicesOfResponsesCopy:
         indicesOfSubmit.append(index + 1)
@@ -73,13 +75,13 @@ def parse(f_name):
                 responseTimes.append(time)
                 indicesOfSubmit.pop(0)
             count += 1
-
+    deltas = []
     for i in range(len(responseTimes) - 1):
         floatTimeInitial = float(responseTimes[i])
         floatTimeFinal = float(responseTimes[i+1])
         delta = round(floatTimeFinal - floatTimeInitial, 3)
-
-        participant.response_times.append(delta)
+        deltas.append(delta)
+    participant.response_times = deltas
     
     return participant
 
