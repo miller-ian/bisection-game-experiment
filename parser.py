@@ -83,13 +83,13 @@ def parse(f_name):
     
     return participant
 
-returnList = []
-count = 1
-for f in listOfLogFiles:
-    print(f, count)
-    participant = parse(f)
-    returnList.append(participant)
-    count += 1
-    # if count == 2:
-    #     break
-#print(returnList)
+def get_list():
+    returnList = []
+    count = 1
+    for f in listOfLogFiles:
+        participant = parse(f)
+        returnList.append(participant)
+        count += 1
+        # if count == 2:
+        #     break
+    return returnList
