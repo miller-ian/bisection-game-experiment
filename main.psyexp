@@ -110,7 +110,7 @@
       <CodeComponent name="code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = random.randint(1, 1000)" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = random.randint(1, 100,000)" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="modify = false;&amp;#10;text.text = '';" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="modify = False&amp;#10;text.text = ''&amp;#10;event.clearEvents('keyboard')&amp;#10;" valType="extendedCode"/>
@@ -146,7 +146,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). &amp;#10;&amp;#10;Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. &amp;#10;&amp;#10;Please note that you must use the number row to type in guesses (not the number pad)! &amp;#10;&amp;#10;Press the space bar to continue..." valType="str"/>
+        <Param name="text" updates="constant" val="In this game you will be asked to guess a random number from 1 to 100,000 (inclusive). &amp;#10;&amp;#10;Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. &amp;#10;&amp;#10;Please note that you must use the number row to type in guesses (not the number pad)! &amp;#10;&amp;#10;Press the space bar to continue..." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>

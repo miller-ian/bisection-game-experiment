@@ -29,6 +29,7 @@ psychoJS.openWindow({
 // store info about the experiment session:
 let expName = 'main';  // from the Builder filename that created this script
 let expInfo = {'participant': '', 'session': '001'};
+let continueGame = 1;
 
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({
@@ -99,6 +100,7 @@ var instr;
 var text;
 var feedback;
 var game_overClock;
+var game_overComponents;
 var game_over_text;
 var globalClock;
 var routineTimer;
@@ -109,7 +111,7 @@ function experimentInit() {
   instText = new visual.TextStim({
     win: psychoJS.window,
     name: 'instText',
-    text: 'In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
+    text: 'In this game you will be asked to guess a random number from 1 to 100,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -194,7 +196,9 @@ function experimentInit() {
 var t;
 var frameN;
 var instructionsComponents;
+var instruction_pt2Components;
 var _key_resp_allKeys;
+var _key_resp_2_allKeys;
 var continueRoutine;
 function instructionsRoutineBegin(snapshot) {
   return function () {
@@ -488,7 +492,7 @@ function trialRoutineBegin(snapshot) {
 }
 
 var textAdd;
-var answer = Math.floor(Math.random() * (1000)) + 1;
+var answer = Math.floor(Math.random() * (100000)) + 1;
 function trialRoutineEachFrame(snapshot) {
   return function () {
     //------Loop for each frame of Routine 'trial'-------

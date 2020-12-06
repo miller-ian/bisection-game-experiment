@@ -1,0 +1,384 @@
+0.028999999999999998	EXP	Created Window = Window( name=Window, fullscr=true, color=#808080, units=height, waitBlanking=true, autoLog=true, size=[1482,994] )
+2.994	DATA	Keydown: Shift
+3.095	DATA	Keydown: J
+3.219	DATA	Keydown: A
+3.3200000000000003	DATA	Keydown: r
+3.432	DATA	Keydown: e
+3.623	DATA	Keydown: d
+3.757	DATA	Keydown:  
+4.006	DATA	Keydown: Shift
+4.087	DATA	Keydown: G
+4.198	DATA	Keydown: i
+4.3420000000000005	DATA	Keydown: n
+4.456	DATA	Keydown: s
+4.523	DATA	Keydown: b
+4.604	DATA	Keydown: u
+4.671	DATA	Keydown: r
+4.792	DATA	Keydown: g
+6.776	EXP	Created instText = TextStim( name=instText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.49910056039361167,"y":-0.3727364185110664,~, text=In this game you will be asked to guess a random n~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.777	EXP	Created text_2 = TextStim( name=text_2, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.4571741975289235,"y":-0.3153923541247485,"~, text=Type in your guess and press “enter” in order to s~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.779	EXP	Created instr = TextStim( name=instr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[-0.2,0.2], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.6557496345259055,"y":0.17132796780684106,"~, text=Type your guess below and press “enter” , alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.782	EXP	Created text = TextStim( name=text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=-1, clipMask=null, boundingBox={"x":0,"y":-0.05583501006036217,"width":0,"height"~, text=null, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.1, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.783	EXP	Created feedback = TextStim( name=feedback, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0.1], size=undefined, ori=null, opacity=1, depth=-2, clipMask=null, boundingBox={"x":0,"y":0.044164989939637835,"width":0,"height"~, text=null, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.1, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.784	EXP	Created game_over_text = TextStim( name=game_over_text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.49491283639336014,"y":-0.2007042253521127,~, text=Congrats! You win!
+
+Please type the letter “y” if ~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.809	EXP	instText: units = height
+6.809	EXP	instText: pos = [0,0]
+6.809	EXP	instText: size = undefined
+6.809	EXP	instText: ori = null
+6.809	EXP	instText: opacity = 1
+6.809	EXP	instText: depth = null
+6.809	EXP	instText: clipMask = null
+6.809	EXP	instText: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	instText: text = In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). 
+
+Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. 
+
+Please note that you must use the number row to type in guesses (not the number pad)! 
+
+Press the space bar to continue...
+6.809	EXP	instText: alignHoriz = center
+6.809	EXP	instText: alignVert = center
+6.809	EXP	instText: flipHoriz = null
+6.809	EXP	instText: flipVert = null
+6.809	EXP	instText: font = Arial
+6.809	EXP	instText: height = 0.05
+6.809	EXP	instText: wrapWidth = 1
+6.809	EXP	instText: bold = null
+6.809	EXP	instText: italic = null
+6.809	EXP	instText: color = #FFFFFF
+6.809	EXP	instText: contrast = 1
+6.809	EXP	text_2: units = height
+6.809	EXP	text_2: pos = [0,0]
+6.809	EXP	text_2: size = undefined
+6.809	EXP	text_2: ori = null
+6.809	EXP	text_2: opacity = 1
+6.809	EXP	text_2: depth = null
+6.809	EXP	text_2: clipMask = null
+6.809	EXP	text_2: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	text_2: text = Type in your guess and press “enter” in order to submit that guess.
+
+Your final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. 
+
+Press the space bar to start the game…
+
+6.809	EXP	text_2: alignHoriz = center
+6.809	EXP	text_2: alignVert = center
+6.809	EXP	text_2: flipHoriz = null
+6.809	EXP	text_2: flipVert = null
+6.809	EXP	text_2: font = Arial
+6.809	EXP	text_2: height = 0.05
+6.809	EXP	text_2: wrapWidth = 1
+6.809	EXP	text_2: bold = null
+6.809	EXP	text_2: italic = null
+6.809	EXP	text_2: color = #FFFFFF
+6.809	EXP	text_2: contrast = 1
+6.809	EXP	instr: units = height
+6.809	EXP	instr: pos = [-0.2,0.2]
+6.809	EXP	instr: size = undefined
+6.809	EXP	instr: ori = null
+6.809	EXP	instr: opacity = 1
+6.809	EXP	instr: depth = null
+6.809	EXP	instr: clipMask = null
+6.809	EXP	instr: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	instr: text = Type your guess below and press “enter” 
+6.809	EXP	instr: alignHoriz = center
+6.809	EXP	instr: alignVert = center
+6.809	EXP	instr: flipHoriz = null
+6.809	EXP	instr: flipVert = null
+6.809	EXP	instr: font = Arial
+6.809	EXP	instr: height = 0.05
+6.809	EXP	instr: wrapWidth = 1
+6.809	EXP	instr: bold = null
+6.809	EXP	instr: italic = null
+6.809	EXP	instr: color = #FFFFFF
+6.809	EXP	instr: contrast = 1
+6.809	EXP	text: units = height
+6.809	EXP	text: pos = [0,0]
+6.809	EXP	text: size = undefined
+6.809	EXP	text: ori = null
+6.809	EXP	text: opacity = 1
+6.809	EXP	text: depth = -1
+6.809	EXP	text: clipMask = null
+6.809	EXP	text: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	text: text = null
+6.809	EXP	text: alignHoriz = center
+6.809	EXP	text: alignVert = center
+6.809	EXP	text: flipHoriz = null
+6.809	EXP	text: flipVert = null
+6.809	EXP	text: font = Arial
+6.809	EXP	text: height = 0.1
+6.809	EXP	text: wrapWidth = 1
+6.809	EXP	text: bold = null
+6.809	EXP	text: italic = null
+6.809	EXP	text: color = #FFFFFF
+6.809	EXP	text: contrast = 1
+6.809	EXP	feedback: units = height
+6.809	EXP	feedback: pos = [0,0.1]
+6.809	EXP	feedback: size = undefined
+6.809	EXP	feedback: ori = null
+6.809	EXP	feedback: opacity = 1
+6.809	EXP	feedback: depth = -2
+6.809	EXP	feedback: clipMask = null
+6.809	EXP	feedback: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	feedback: text = null
+6.809	EXP	feedback: alignHoriz = center
+6.809	EXP	feedback: alignVert = center
+6.809	EXP	feedback: flipHoriz = null
+6.809	EXP	feedback: flipVert = null
+6.809	EXP	feedback: font = Arial
+6.809	EXP	feedback: height = 0.1
+6.809	EXP	feedback: wrapWidth = 1
+6.809	EXP	feedback: bold = null
+6.809	EXP	feedback: italic = null
+6.809	EXP	feedback: color = #FFFFFF
+6.809	EXP	feedback: contrast = 1
+6.809	EXP	game_over_text: units = height
+6.809	EXP	game_over_text: pos = [0,0]
+6.809	EXP	game_over_text: size = undefined
+6.809	EXP	game_over_text: ori = null
+6.809	EXP	game_over_text: opacity = 1
+6.809	EXP	game_over_text: depth = null
+6.809	EXP	game_over_text: clipMask = null
+6.809	EXP	game_over_text: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.809	EXP	game_over_text: text = Congrats! You win!
+
+Please type the letter “y” if you are familiar with binary or bisection search. 
+Type the letter “n” if you have never heard of or do not know what binary or bisection search is.
+6.809	EXP	game_over_text: alignHoriz = center
+6.809	EXP	game_over_text: alignVert = center
+6.809	EXP	game_over_text: flipHoriz = null
+6.809	EXP	game_over_text: flipVert = null
+6.809	EXP	game_over_text: font = Arial
+6.809	EXP	game_over_text: height = 0.05
+6.809	EXP	game_over_text: wrapWidth = 1
+6.809	EXP	game_over_text: bold = null
+6.809	EXP	game_over_text: italic = null
+6.809	EXP	game_over_text: color = #FFFFFF
+6.809	EXP	game_over_text: contrast = 1
+6.809	EXP	instText: autoDraw = true
+8.461	DATA	Keydown:  
+8.485	EXP	instText: autoDraw = null
+8.485	EXP	text_2: autoDraw = true
+8.795	DATA	Mouse: wheel shift=(-1,0), pos=(990,753)
+8.805	DATA	Mouse: wheel shift=(-2,0), pos=(990,753)
+8.818	DATA	Mouse: wheel shift=(-1,0), pos=(991,753)
+8.838000000000001	DATA	Mouse: wheel shift=(-1,0), pos=(994,753)
+8.985	DATA	Mouse: wheel shift=(2,0), pos=(1009,753)
+9.11	DATA	Mouse: wheel shift=(1,0), pos=(1009,753)
+9.13	DATA	Mouse: wheel shift=(1,0), pos=(1009,753)
+9.145	DATA	Mouse: wheel shift=(1,0), pos=(1009,753)
+9.153	DATA	Mouse: wheel shift=(1,0), pos=(1009,753)
+9.164	DATA	Mouse: wheel shift=(1,0), pos=(1009,753)
+9.254	DATA	Mouse: wheel shift=(-1,0), pos=(1010,753)
+9.265	DATA	Mouse: wheel shift=(-1,0), pos=(1010,753)
+9.288	DATA	Mouse: wheel shift=(-2,0), pos=(1010,753)
+9.321	DATA	Mouse: wheel shift=(-1,0), pos=(1010,753)
+9.333	DATA	Mouse: wheel shift=(-1,0), pos=(1010,753)
+9.345	DATA	Mouse: wheel shift=(-2,0), pos=(1010,753)
+9.355	DATA	Mouse: wheel shift=(-3,0), pos=(1010,753)
+9.367	DATA	Mouse: wheel shift=(-2,0), pos=(1010,753)
+9.379	DATA	Mouse: wheel shift=(-3,0), pos=(1010,753)
+9.389	DATA	Mouse: wheel shift=(-2,0), pos=(1010,753)
+9.4	DATA	Mouse: wheel shift=(-3,0), pos=(1010,753)
+9.412	DATA	Mouse: wheel shift=(-3,0), pos=(1010,753)
+9.428	DATA	Mouse: wheel shift=(-3,0), pos=(1010,753)
+9.436	DATA	Mouse: wheel shift=(-2,0), pos=(1010,753)
+9.446	DATA	Mouse: wheel shift=(-2,0), pos=(1011,753)
+9.463000000000001	DATA	Mouse: wheel shift=(-2,0), pos=(1012,753)
+9.469	DATA	Mouse: wheel shift=(-1,0), pos=(1012,752)
+9.479000000000001	DATA	Mouse: wheel shift=(-1,0), pos=(1013,752)
+10.935	DATA	Keydown:  
+10.954	EXP	text_2: autoDraw = null
+10.954	EXP	text: text = null
+10.954	EXP	instr: autoDraw = true
+10.954	EXP	text: autoDraw = true
+10.954	EXP	feedback: autoDraw = true
+11.324	DATA	Mouse: wheel shift=(1,0), pos=(1052,743)
+11.336	DATA	Mouse: wheel shift=(0,9), pos=(1052,743)
+11.365	DATA	Mouse: wheel shift=(0,11), pos=(1052,743)
+11.381	DATA	Mouse: wheel shift=(0,12), pos=(1052,743)
+11.397	DATA	Mouse: wheel shift=(0,12), pos=(1052,743)
+11.414	DATA	Mouse: wheel shift=(0,11), pos=(1052,743)
+11.43	DATA	Mouse: wheel shift=(0,11), pos=(1052,743)
+11.448	DATA	Mouse: wheel shift=(0,10), pos=(1052,743)
+11.464	DATA	Mouse: wheel shift=(0,10), pos=(1052,743)
+11.481	DATA	Mouse: wheel shift=(0,10), pos=(1052,743)
+11.497	DATA	Mouse: wheel shift=(0,9), pos=(1052,743)
+11.538	DATA	Mouse: wheel shift=(1,0), pos=(1052,743)
+11.549	DATA	Mouse: wheel shift=(1,2), pos=(1052,743)
+11.564	DATA	Mouse: wheel shift=(1,1), pos=(1052,743)
+11.572000000000001	DATA	Mouse: wheel shift=(0,3), pos=(1052,743)
+11.597	DATA	Mouse: wheel shift=(0,1), pos=(1052,743)
+11.605	DATA	Mouse: wheel shift=(3,3), pos=(1052,743)
+11.616	DATA	Mouse: wheel shift=(1,0), pos=(1052,743)
+11.63	DATA	Mouse: wheel shift=(3,3), pos=(1052,743)
+11.64	DATA	Mouse: wheel shift=(0,2), pos=(1052,744)
+11.651	DATA	Mouse: wheel shift=(0,3), pos=(1052,744)
+11.664	DATA	Mouse: wheel shift=(1,1), pos=(1052,744)
+11.673	DATA	Mouse: wheel shift=(1,1), pos=(1052,744)
+11.684000000000001	DATA	Mouse: wheel shift=(0,1), pos=(1052,744)
+11.697000000000001	DATA	Mouse: wheel shift=(-2,0), pos=(1052,744)
+11.706	DATA	Mouse: wheel shift=(-3,0), pos=(1052,744)
+11.718	DATA	Mouse: wheel shift=(-3,0), pos=(1052,744)
+11.899	DATA	Mouse: wheel shift=(-1,0), pos=(1052,743)
+11.914	DATA	Mouse: wheel shift=(-2,0), pos=(1051,743)
+11.922	DATA	Mouse: wheel shift=(-2,0), pos=(1050,743)
+13.433	DATA	Keydown:  
+14.509	DATA	Mouse: 0 button down, pos=(678,627)
+14.587	DATA	Mouse: 0 button down, pos=(678,627)
+15.161	DATA	Mouse: 0 button down, pos=(685,831)
+15.241	DATA	Mouse: 0 button down, pos=(685,831)
+15.951	DATA	Mouse: 0 button down, pos=(675,863)
+16.027	DATA	Mouse: 0 button down, pos=(675,863)
+17.485	DATA	Keydown: 5
+17.502	EXP	text: text = 5
+17.629	DATA	Keydown: 0
+17.637	EXP	text: text = 50
+17.754	DATA	Keydown: 0
+17.77	EXP	text: text = 500
+19.946	DATA	Keydown: Enter
+19.954	EXP	feedback: text = Too high!
+19.954	EXP	text: text = null
+23.783	DATA	Keydown: 2
+23.793	EXP	text: text = 2
+24.044	DATA	Keydown: 5
+24.060000000000002	EXP	text: text = 25
+24.166	DATA	Keydown: 0
+24.177	EXP	text: text = 250
+26.536	DATA	Mouse: wheel shift=(0,-1), pos=(675,867)
+26.557000000000002	DATA	Mouse: wheel shift=(-3,-4), pos=(675,867)
+26.587	DATA	Mouse: wheel shift=(-4,-4), pos=(675,867)
+26.625	DATA	Mouse: wheel shift=(-1,-1), pos=(675,867)
+26.636	DATA	Mouse: wheel shift=(-17,-10), pos=(675,867)
+26.648	DATA	Mouse: wheel shift=(-12,-9), pos=(675,867)
+26.658	DATA	Mouse: wheel shift=(-27,-13), pos=(675,867)
+26.67	DATA	Mouse: wheel shift=(-25,-9), pos=(675,867)
+26.698	DATA	Mouse: wheel shift=(-36,-16), pos=(675,867)
+26.715	DATA	Mouse: wheel shift=(-43,-17), pos=(675,867)
+26.731	DATA	Mouse: wheel shift=(-45,-18), pos=(675,867)
+26.748	DATA	Mouse: wheel shift=(-45,-18), pos=(675,867)
+26.765	DATA	Mouse: wheel shift=(-44,-17), pos=(675,867)
+26.781	DATA	Mouse: wheel shift=(-43,-17), pos=(675,867)
+26.799	DATA	Mouse: wheel shift=(-41,-16), pos=(675,867)
+26.815	DATA	Mouse: wheel shift=(-44,-17), pos=(675,867)
+26.831	DATA	Mouse: wheel shift=(-41,-16), pos=(675,867)
+26.848	DATA	Mouse: wheel shift=(-37,-15), pos=(675,867)
+26.864	DATA	Mouse: wheel shift=(-34,-13), pos=(675,867)
+26.881	DATA	Mouse: wheel shift=(-32,-12), pos=(675,867)
+26.898	DATA	Mouse: wheel shift=(-29,-11), pos=(675,867)
+26.915	DATA	Mouse: wheel shift=(-27,-10), pos=(675,867)
+26.931	DATA	Mouse: wheel shift=(-24,-10), pos=(675,867)
+26.949	DATA	Mouse: wheel shift=(-23,-9), pos=(675,867)
+26.965	DATA	Mouse: wheel shift=(-21,-8), pos=(675,867)
+26.981	DATA	Mouse: wheel shift=(-20,-8), pos=(675,867)
+26.998	DATA	Mouse: wheel shift=(-18,-7), pos=(675,867)
+27.015	DATA	Mouse: wheel shift=(-17,-7), pos=(675,867)
+27.032	DATA	Mouse: wheel shift=(-16,-7), pos=(675,867)
+27.048	DATA	Mouse: wheel shift=(-15,-6), pos=(675,867)
+27.065	DATA	Mouse: wheel shift=(-13,-6), pos=(675,867)
+27.082	DATA	Mouse: wheel shift=(-12,-6), pos=(675,867)
+27.098	DATA	Mouse: wheel shift=(-11,-5), pos=(675,867)
+27.115000000000002	DATA	Mouse: wheel shift=(-10,-5), pos=(675,867)
+27.131	DATA	Mouse: wheel shift=(-9,-4), pos=(675,867)
+27.148	DATA	Mouse: wheel shift=(-9,-4), pos=(675,867)
+27.165	DATA	Mouse: wheel shift=(-8,-4), pos=(675,867)
+27.181	DATA	Keydown:  
+27.181	DATA	Mouse: wheel shift=(-8,-4), pos=(675,867)
+27.198	DATA	Mouse: wheel shift=(-7,-4), pos=(675,867)
+27.215	DATA	Mouse: wheel shift=(-7,-4), pos=(675,867)
+27.232	DATA	Mouse: wheel shift=(-7,-3), pos=(675,867)
+27.248	DATA	Mouse: wheel shift=(-6,-3), pos=(675,867)
+27.265	DATA	Mouse: wheel shift=(-6,-3), pos=(675,867)
+27.282	DATA	Mouse: wheel shift=(-5,-3), pos=(675,867)
+27.298	DATA	Mouse: wheel shift=(-5,-2), pos=(675,867)
+27.315	DATA	Mouse: wheel shift=(-5,-2), pos=(675,867)
+27.332	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.348	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.365000000000002	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.381	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.398	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.415	DATA	Mouse: wheel shift=(-4,-2), pos=(675,867)
+27.432000000000002	DATA	Mouse: wheel shift=(-3,-2), pos=(675,867)
+27.448	DATA	Mouse: wheel shift=(-3,-2), pos=(675,867)
+27.465	DATA	Mouse: wheel shift=(-3,-1), pos=(675,867)
+27.47	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.499000000000002	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.515	DATA	Mouse: wheel shift=(-6,0), pos=(675,867)
+27.532	DATA	Mouse: wheel shift=(-6,0), pos=(675,867)
+27.548	DATA	Mouse: wheel shift=(-6,0), pos=(675,867)
+27.565	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.582	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.598	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.615000000000002	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.632	DATA	Mouse: wheel shift=(-5,0), pos=(675,867)
+27.648	DATA	Mouse: wheel shift=(-4,0), pos=(675,867)
+27.665	DATA	Mouse: wheel shift=(-4,0), pos=(675,867)
+27.681	DATA	Mouse: wheel shift=(-4,0), pos=(675,867)
+27.698	DATA	Mouse: wheel shift=(-4,0), pos=(675,867)
+27.715	DATA	Mouse: wheel shift=(-4,0), pos=(675,867)
+27.732	DATA	Mouse: wheel shift=(-3,0), pos=(675,867)
+27.748	DATA	Mouse: wheel shift=(-3,0), pos=(675,867)
+27.765	DATA	Mouse: wheel shift=(-3,0), pos=(675,867)
+27.782	DATA	Mouse: wheel shift=(-2,0), pos=(675,867)
+27.798	DATA	Mouse: wheel shift=(-2,0), pos=(675,867)
+27.815	DATA	Mouse: wheel shift=(-2,0), pos=(675,867)
+27.823	DATA	Keydown: Enter
+27.831	EXP	feedback: text = Too high!
+27.831	EXP	text: text = null
+27.833000000000002	DATA	Mouse: wheel shift=(-2,0), pos=(675,867)
+27.85	DATA	Mouse: wheel shift=(-2,0), pos=(675,867)
+27.865000000000002	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.881	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.898	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.915	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.932000000000002	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.948	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.982	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+27.999000000000002	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+28.032	DATA	Mouse: wheel shift=(-1,0), pos=(675,867)
+30.367	DATA	Keydown: 1
+30.384	EXP	text: text = 1
+30.713	DATA	Keydown: 5
+30.716	EXP	text: text = 15
+30.893	DATA	Keydown: 0
+30.901	EXP	text: text = 150
+31.939	DATA	Keydown: Enter
+31.951999999999998	EXP	feedback: text = Too high!
+31.951999999999998	EXP	text: text = null
+34.651	DATA	Keydown: 7
+34.654	EXP	text: text = 7
+34.856	DATA	Keydown: 5
+34.873	EXP	text: text = 75
+35.933	DATA	Keydown: Enter
+35.94	EXP	feedback: text = Too low!
+35.94	EXP	text: text = null
+38.903	DATA	Keydown: 1
+38.91000000000001	EXP	text: text = 1
+39.028	DATA	Keydown: 0
+39.044000000000004	EXP	text: text = 10
+39.143	DATA	Keydown: 0
+39.161	EXP	text: text = 100
+39.984	DATA	Keydown: Enter
+39.995	EXP	feedback: text = Too high!
+39.995	EXP	text: text = null
+42.606	DATA	Keydown: 8
+42.614000000000004	EXP	text: text = 8
+42.988	DATA	Keydown: 5
+42.998	EXP	text: text = 85
+43.247	DATA	Keydown: Enter
+43.265	EXP	feedback: text = Too low!
+43.265	EXP	text: text = null
+45.857	DATA	Keydown: 9
+45.868	EXP	text: text = 9
+45.969	DATA	Keydown: 0
+45.985	EXP	text: text = 90
+46.408	DATA	Keydown: Enter
+46.425000000000004	EXP	instr: autoDraw = null
+46.425000000000004	EXP	text: autoDraw = null
+46.425000000000004	EXP	feedback: autoDraw = null
+46.425000000000004	EXP	text: text = null
+46.425000000000004	EXP	game_over_text: autoDraw = true
+54.813	DATA	Keydown: n
+54.969	DATA	Keydown: Enter

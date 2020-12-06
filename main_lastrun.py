@@ -83,7 +83,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
 instText = visual.TextStim(win=win, name='instText',
-    text='In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
+    text='In this game you will be asked to guess a random number from 1 to 100,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -127,7 +127,7 @@ feedback = visual.TextStim(win=win, name='feedback',
     depth=-2.0);
 import random
 continueGame = 1
-answer = random.randint(1, 1000)
+answer = random.randint(1, 100000)
 
 # Initialize components for Routine "game_over"
 game_overClock = core.Clock()
