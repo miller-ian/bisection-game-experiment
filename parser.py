@@ -70,3 +70,9 @@ def get_list():
     return returnList
 
 participant_list = get_list()
+count = 0
+for i in participant_list:
+    print(i.name)
+    print(i.responses[0])
+    count += 1
+print(count)
