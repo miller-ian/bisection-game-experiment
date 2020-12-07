@@ -1,0 +1,411 @@
+0.12675499999022577	EXP	Created Window = Window( name=Window, fullscr=true, color=#808080, units=height, waitBlanking=true, autoLog=true, size=[1394,722] )
+3.4187549999915063	DATA	Keydown: CapsLock
+3.5683500000013737	DATA	Keydown: A
+3.84313999999722	DATA	Keydown: s
+3.9405100000003586	DATA	Keydown: h
+4.138179999994463	DATA	Keydown: l
+4.221684999996796	DATA	Keydown: e
+4.530074999987846	DATA	Keydown: y
+5.904109999988577	EXP	Created instText = TextStim( name=instText, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.4947317023026316,"y":-0.3975069252077562,"~, text=In this game you will be asked to guess a random n~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+5.911684999999125	EXP	Created text_2 = TextStim( name=text_2, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.49748284929016623,"y":-0.3123268698060942,~, text=Type in your guess and press “enter” in order to s~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+5.9150099999969825	EXP	Created instr = TextStim( name=instr, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[-0.2,0.2], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.6517602471433518,"y":0.171606648199446,"wi~, text=Type your guess below and press “enter” , alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+5.943090000000666	EXP	Created text = TextStim( name=text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=-1, clipMask=null, boundingBox={"x":0,"y":-0.05678670360110803,"width":0,"height"~, text=null, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.1, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+5.952120000001742	EXP	Created feedback = TextStim( name=feedback, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0.1], size=undefined, ori=null, opacity=1, depth=-2, clipMask=null, boundingBox={"x":0,"y":0.04321329639889197,"width":0,"height":~, text=null, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.1, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.045519999999669	EXP	Created game_over_text = TextStim( name=game_over_text, win=Window( name=Window, fullscr=true, color=#808080, ~), autoDraw=null, autoLog=true, units=height, pos=[0,0], size=undefined, ori=null, opacity=1, depth=null, clipMask=null, boundingBox={"x":-0.49058063538781166,"y":-0.1987534626038781,~, text=Congrats! You win!
+
+Please type the letter “y” if ~, alignHoriz=center, alignVert=center, flipHoriz=null, flipVert=null, font=Arial, height=0.05, wrapWidth=1, bold=null, italic=null, color=#FFFFFF, contrast=1 )
+6.718219999995199	EXP	instText: units = height
+6.718219999995199	EXP	instText: pos = [0,0]
+6.718219999995199	EXP	instText: size = undefined
+6.718219999995199	EXP	instText: ori = null
+6.718219999995199	EXP	instText: opacity = 1
+6.718219999995199	EXP	instText: depth = null
+6.718219999995199	EXP	instText: clipMask = null
+6.718219999995199	EXP	instText: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	instText: text = In this game you will be asked to guess a random number from 1 to 100,000 (inclusive). 
+
+Each time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. 
+
+Please note that you must use the number row to type in guesses (not the number pad)! 
+
+Press the space bar to continue...
+6.718219999995199	EXP	instText: alignHoriz = center
+6.718219999995199	EXP	instText: alignVert = center
+6.718219999995199	EXP	instText: flipHoriz = null
+6.718219999995199	EXP	instText: flipVert = null
+6.718219999995199	EXP	instText: font = Arial
+6.718219999995199	EXP	instText: height = 0.05
+6.718219999995199	EXP	instText: wrapWidth = 1
+6.718219999995199	EXP	instText: bold = null
+6.718219999995199	EXP	instText: italic = null
+6.718219999995199	EXP	instText: color = #FFFFFF
+6.718219999995199	EXP	instText: contrast = 1
+6.718219999995199	EXP	text_2: units = height
+6.718219999995199	EXP	text_2: pos = [0,0]
+6.718219999995199	EXP	text_2: size = undefined
+6.718219999995199	EXP	text_2: ori = null
+6.718219999995199	EXP	text_2: opacity = 1
+6.718219999995199	EXP	text_2: depth = null
+6.718219999995199	EXP	text_2: clipMask = null
+6.718219999995199	EXP	text_2: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	text_2: text = Type in your guess and press “enter” in order to submit that guess.
+
+Your final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. 
+
+Press the space bar to start the game…
+
+6.718219999995199	EXP	text_2: alignHoriz = center
+6.718219999995199	EXP	text_2: alignVert = center
+6.718219999995199	EXP	text_2: flipHoriz = null
+6.718219999995199	EXP	text_2: flipVert = null
+6.718219999995199	EXP	text_2: font = Arial
+6.718219999995199	EXP	text_2: height = 0.05
+6.718219999995199	EXP	text_2: wrapWidth = 1
+6.718219999995199	EXP	text_2: bold = null
+6.718219999995199	EXP	text_2: italic = null
+6.718219999995199	EXP	text_2: color = #FFFFFF
+6.718219999995199	EXP	text_2: contrast = 1
+6.718219999995199	EXP	instr: units = height
+6.718219999995199	EXP	instr: pos = [-0.2,0.2]
+6.718219999995199	EXP	instr: size = undefined
+6.718219999995199	EXP	instr: ori = null
+6.718219999995199	EXP	instr: opacity = 1
+6.718219999995199	EXP	instr: depth = null
+6.718219999995199	EXP	instr: clipMask = null
+6.718219999995199	EXP	instr: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	instr: text = Type your guess below and press “enter” 
+6.718219999995199	EXP	instr: alignHoriz = center
+6.718219999995199	EXP	instr: alignVert = center
+6.718219999995199	EXP	instr: flipHoriz = null
+6.718219999995199	EXP	instr: flipVert = null
+6.718219999995199	EXP	instr: font = Arial
+6.718219999995199	EXP	instr: height = 0.05
+6.718219999995199	EXP	instr: wrapWidth = 1
+6.718219999995199	EXP	instr: bold = null
+6.718219999995199	EXP	instr: italic = null
+6.718219999995199	EXP	instr: color = #FFFFFF
+6.718219999995199	EXP	instr: contrast = 1
+6.718219999995199	EXP	text: units = height
+6.718219999995199	EXP	text: pos = [0,0]
+6.718219999995199	EXP	text: size = undefined
+6.718219999995199	EXP	text: ori = null
+6.718219999995199	EXP	text: opacity = 1
+6.718219999995199	EXP	text: depth = -1
+6.718219999995199	EXP	text: clipMask = null
+6.718219999995199	EXP	text: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	text: text = null
+6.718219999995199	EXP	text: alignHoriz = center
+6.718219999995199	EXP	text: alignVert = center
+6.718219999995199	EXP	text: flipHoriz = null
+6.718219999995199	EXP	text: flipVert = null
+6.718219999995199	EXP	text: font = Arial
+6.718219999995199	EXP	text: height = 0.1
+6.718219999995199	EXP	text: wrapWidth = 1
+6.718219999995199	EXP	text: bold = null
+6.718219999995199	EXP	text: italic = null
+6.718219999995199	EXP	text: color = #FFFFFF
+6.718219999995199	EXP	text: contrast = 1
+6.718219999995199	EXP	feedback: units = height
+6.718219999995199	EXP	feedback: pos = [0,0.1]
+6.718219999995199	EXP	feedback: size = undefined
+6.718219999995199	EXP	feedback: ori = null
+6.718219999995199	EXP	feedback: opacity = 1
+6.718219999995199	EXP	feedback: depth = -2
+6.718219999995199	EXP	feedback: clipMask = null
+6.718219999995199	EXP	feedback: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	feedback: text = null
+6.718219999995199	EXP	feedback: alignHoriz = center
+6.718219999995199	EXP	feedback: alignVert = center
+6.718219999995199	EXP	feedback: flipHoriz = null
+6.718219999995199	EXP	feedback: flipVert = null
+6.718219999995199	EXP	feedback: font = Arial
+6.718219999995199	EXP	feedback: height = 0.1
+6.718219999995199	EXP	feedback: wrapWidth = 1
+6.718219999995199	EXP	feedback: bold = null
+6.718219999995199	EXP	feedback: italic = null
+6.718219999995199	EXP	feedback: color = #FFFFFF
+6.718219999995199	EXP	feedback: contrast = 1
+6.718219999995199	EXP	game_over_text: units = height
+6.718219999995199	EXP	game_over_text: pos = [0,0]
+6.718219999995199	EXP	game_over_text: size = undefined
+6.718219999995199	EXP	game_over_text: ori = null
+6.718219999995199	EXP	game_over_text: opacity = 1
+6.718219999995199	EXP	game_over_text: depth = null
+6.718219999995199	EXP	game_over_text: clipMask = null
+6.718219999995199	EXP	game_over_text: boundingBox = {"x":0,"y":0,"width":0,"height":0,"type":1}
+6.718219999995199	EXP	game_over_text: text = Congrats! You win!
+
+Please type the letter “y” if you are familiar with binary or bisection search. 
+Type the letter “n” if you have never heard of or do not know what binary or bisection search is.
+6.718219999995199	EXP	game_over_text: alignHoriz = center
+6.718219999995199	EXP	game_over_text: alignVert = center
+6.718219999995199	EXP	game_over_text: flipHoriz = null
+6.718219999995199	EXP	game_over_text: flipVert = null
+6.718219999995199	EXP	game_over_text: font = Arial
+6.718219999995199	EXP	game_over_text: height = 0.05
+6.718219999995199	EXP	game_over_text: wrapWidth = 1
+6.718219999995199	EXP	game_over_text: bold = null
+6.718219999995199	EXP	game_over_text: italic = null
+6.718219999995199	EXP	game_over_text: color = #FFFFFF
+6.718219999995199	EXP	game_over_text: contrast = 1
+6.718219999995199	EXP	instText: autoDraw = true
+13.139024999996764	DATA	Keydown:  
+13.159174999993411	EXP	instText: autoDraw = null
+13.159174999993411	EXP	text_2: autoDraw = true
+19.005284999992	DATA	Keydown:  
+19.03920499999367	EXP	text_2: autoDraw = null
+19.03920499999367	EXP	text: text = null
+19.03920499999367	EXP	instr: autoDraw = true
+19.03920499999367	EXP	text: autoDraw = true
+19.03920499999367	EXP	feedback: autoDraw = true
+22.449049999995623	DATA	Keydown: 7
+22.470249999998487	EXP	text: text = 7
+22.704094999993686	DATA	Keydown: 3
+22.71208499999193	EXP	text: text = 73
+23.50459499999124	DATA	Keydown: Enter
+23.513114999994286	EXP	feedback: text = Too low!
+23.513114999994286	EXP	text: text = null
+29.97883500000171	DATA	Keydown: 6
+29.990614999987883	EXP	text: text = 6
+30.09740499999316	DATA	Keydown: 0
+30.119874999989406	EXP	text: text = 60
+30.255024999991292	DATA	Keydown: 0
+30.26286999999138	EXP	text: text = 600
+30.628689999997732	DATA	Keydown: 0
+30.654799999989336	EXP	text: text = 6000
+31.071769999995013	DATA	Keydown: Enter
+31.07941999999457	EXP	feedback: text = Too low!
+31.07941999999457	EXP	text: text = null
+36.27082999999402	DATA	Keydown: 7
+36.278939999989234	EXP	text: text = 7
+36.50488499998755	DATA	Keydown: 0
+36.51380000000063	EXP	text: text = 70
+36.90652499999851	DATA	Keydown: 0
+36.91455000000133	EXP	text: text = 700
+37.05253499999526	DATA	Keydown: 0
+37.060719999994035	EXP	text: text = 7000
+37.42965499999991	DATA	Keydown: 0
+37.454034999987925	EXP	text: text = 70000
+38.149829999994836	DATA	Keydown: Enter
+38.17163499999151	EXP	feedback: text = Too low!
+38.17163499999151	EXP	text: text = null
+41.34574999999313	DATA	Keydown: 8
+41.36929499999678	EXP	text: text = 8
+41.580944999994244	DATA	Keydown: 0
+41.60342999998829	EXP	text: text = 80
+41.754134999995586	DATA	Keydown: 0
+41.77083499998844	EXP	text: text = 800
+41.87982999999076	DATA	Keydown: 0
+41.90418499999214	EXP	text: text = 8000
+42.02134500000102	DATA	Keydown: 0
+42.030234999998356	EXP	text: text = 80000
+42.537449999988894	DATA	Keydown: Enter
+42.54593500000192	EXP	feedback: text = Too low!
+42.54593500000192	EXP	text: text = null
+43.887489999993704	DATA	Keydown: 8
+43.89542000000074	EXP	text: text = 8
+44.86494999998831	DATA	Keydown: 9
+44.88676999999734	EXP	text: text = 89
+45.31182499999704	DATA	Keydown: 0
+45.32312499999534	EXP	text: text = 890
+45.439199999993434	DATA	Keydown: 0
+45.44787499999802	EXP	text: text = 8900
+45.58786999998847	DATA	Keydown: 0
+45.59734999999637	EXP	text: text = 89000
+45.73622500000056	DATA	Keydown: 0
+45.75125999999	EXP	text: text = 890000
+46.312624999991385	DATA	Keydown: Backspace
+46.33631499999319	EXP	text: text = 89000
+46.78963999998814	DATA	Keydown: Enter
+46.799480000001495	EXP	feedback: text = Too high!
+46.799480000001495	EXP	text: text = null
+49.681635000000824	DATA	Keydown: 8
+49.70315999999002	EXP	text: text = 8
+49.879744999998366	DATA	Keydown: 7
+49.90427999998792	EXP	text: text = 87
+50.08225500000117	DATA	Keydown: 0
+50.10583999998926	EXP	text: text = 870
+50.237959999998566	DATA	Keydown: 0
+50.24739999999292	EXP	text: text = 8700
+50.73685499999556	DATA	Keydown: 0
+50.745054999992135	EXP	text: text = 87000
+51.44833999998809	DATA	Keydown: Enter
+51.46949999999197	EXP	feedback: text = Too high!
+51.46949999999197	EXP	text: text = null
+53.52126499998849	DATA	Keydown: 8
+53.52951500000199	EXP	text: text = 8
+53.93707999998878	DATA	Keydown: 6
+53.94662999999127	EXP	text: text = 86
+54.30483499998809	DATA	Keydown: 0
+54.313939999992726	EXP	text: text = 860
+54.44845999999961	DATA	Keydown: 0
+54.47094999998808	EXP	text: text = 8600
+54.61648499999137	DATA	Keydown: 0
+54.63710999999603	EXP	text: text = 86000
+55.11349499999778	DATA	Keydown: Enter
+55.13815999998769	EXP	feedback: text = Too high!
+55.13815999998769	EXP	text: text = null
+56.064689999999246	DATA	Keydown: 8
+56.07354499999201	EXP	text: text = 8
+56.37090499998885	DATA	Keydown: 6
+56.379269999990356	EXP	text: text = 86
+56.7714399999968	DATA	Keydown: Backspace
+56.77939499999047	EXP	text: text = 8
+56.92213500000071	DATA	Keydown: 5
+56.93038999999408	EXP	text: text = 85
+57.18611499998951	DATA	Keydown: 0
+57.20279499999015	EXP	text: text = 850
+57.337034999989555	DATA	Keydown: 0
+57.34528499998851	EXP	text: text = 8500
+57.50410499999998	DATA	Keydown: 0
+57.512094999998226	EXP	text: text = 85000
+57.9861799999926	DATA	Keydown: Enter
+57.99488499999279	EXP	feedback: text = Too high!
+57.99488499999279	EXP	text: text = null
+59.29136999999173	DATA	Keydown: 8
+59.30275499999698	EXP	text: text = 8
+59.57975499999884	DATA	Keydown: 4
+59.60411999998905	EXP	text: text = 84
+59.879724999991595	DATA	Keydown: 0
+59.90311999998812	EXP	text: text = 840
+60.01355499999772	DATA	Keydown: 0
+60.035834999987856	EXP	text: text = 8400
+60.13802499999292	DATA	Keydown: 0
+60.146175000001676	EXP	text: text = 84000
+60.84716999999364	DATA	Keydown: Enter
+60.87063499999931	EXP	feedback: text = Too high!
+60.87063499999931	EXP	text: text = null
+62.77055499999551	DATA	Keydown: 8
+62.77827999999863	EXP	text: text = 8
+63.624044999989565	DATA	Keydown: 3
+63.63272499998857	EXP	text: text = 83
+63.93819999998959	DATA	Keydown: 0
+63.94618499999342	EXP	text: text = 830
+64.07365999999456	DATA	Keydown: 0
+64.0821799999976	EXP	text: text = 8300
+64.20013499999186	DATA	Keydown: 0
+64.2207849999977	EXP	text: text = 83000
+64.73225499999535	DATA	Keydown: Enter
+64.75393999999505	EXP	feedback: text = Too low!
+64.75393999999505	EXP	text: text = null
+67.7144549999939	DATA	Keydown: 8
+67.73630499999854	EXP	text: text = 8
+68.6878599999909	DATA	Keydown: 3
+68.69583499999135	EXP	text: text = 83
+69.53933499999403	DATA	Keydown: 5
+69.54807499999879	EXP	text: text = 835
+69.77237999999488	DATA	Keydown: 0
+69.78053999999247	EXP	text: text = 8350
+69.90013499998895	DATA	Keydown: 0
+69.9101299999893	EXP	text: text = 83500
+70.32181499998842	DATA	Keydown: Enter
+70.33013999999093	EXP	feedback: text = Too low!
+70.33013999999093	EXP	text: text = null
+72.4881549999991	DATA	Keydown: 8
+72.49642499999027	EXP	text: text = 8
+74.18765999999596	DATA	Keydown: 3
+74.19525999999314	EXP	text: text = 83
+74.96342999998888	DATA	Keydown: 6
+74.98647499999788	EXP	text: text = 836
+75.18793499999447	DATA	Keydown: 0
+75.19636499999615	EXP	text: text = 8360
+75.33672999999544	DATA	Keydown: 0
+75.35203999999794	EXP	text: text = 83600
+75.67952499999956	DATA	Keydown: Enter
+75.70385499999975	EXP	feedback: text = Too low!
+75.70385499999975	EXP	text: text = null
+78.27366999999504	DATA	Keydown: 8
+78.28689499999746	EXP	text: text = 8
+79.05389499999	DATA	Keydown: 3
+79.06315000000177	EXP	text: text = 83
+79.56385999999475	DATA	Keydown: 7
+79.58752999998978	EXP	text: text = 837
+79.7025250000006	DATA	Keydown: 0
+79.71078499998839	EXP	text: text = 8370
+79.85401999999885	DATA	Keydown: 0
+79.87091499999224	EXP	text: text = 83700
+80.18112999999721	DATA	Keydown: Enter
+80.20221499999752	EXP	feedback: text = Too low!
+80.20221499999752	EXP	text: text = null
+82.00530499999877	DATA	Keydown: 8
+82.01879999999073	EXP	text: text = 8
+83.80463999998756	DATA	Keydown: 3
+83.81338500000129	EXP	text: text = 83
+84.88166999998793	DATA	Keydown: 8
+84.90360499999952	EXP	text: text = 838
+85.08409999999276	DATA	Keydown: 0
+85.10472999999183	EXP	text: text = 8380
+85.2376249999943	DATA	Keydown: 0
+85.24581999999646	EXP	text: text = 83800
+85.55632499999774	DATA	Keydown: Enter
+85.56489499998861	EXP	feedback: text = Too low!
+85.56489499998861	EXP	text: text = null
+86.8203199999989	DATA	Keydown: 8
+86.8285399999877	EXP	text: text = 8
+87.35498999999254	DATA	Keydown: 3
+87.36349499999778	EXP	text: text = 83
+87.8208650000015	DATA	Keydown: 9
+87.82890999999654	EXP	text: text = 839
+88.0385849999875	DATA	Keydown: 0
+88.04809499999101	EXP	text: text = 8390
+88.17265999999654	DATA	Keydown: 0
+88.18142999999691	EXP	text: text = 83900
+88.57080499999574	DATA	Keydown: Enter
+88.58006999999634	EXP	feedback: text = Too high!
+88.58006999999634	EXP	text: text = null
+92.55389499999	DATA	Keydown: 8
+92.56177999998908	EXP	text: text = 8
+93.3862850000005	DATA	Keydown: 3
+93.39461499999743	EXP	text: text = 83
+94.03746500000125	DATA	Keydown: 8
+94.04510499999742	EXP	text: text = 838
+94.84836499999801	DATA	Keydown: 5
+94.87030499998946	EXP	text: text = 8385
+95.03874499999802	DATA	Keydown: 0
+95.05335000000196	EXP	text: text = 83850
+95.43510499999684	DATA	Keydown: Enter
+95.44315999999526	EXP	feedback: text = Too low!
+95.44315999999526	EXP	text: text = null
+98.87219999999797	DATA	Keydown: 8
+98.88075499999104	EXP	text: text = 8
+100.20517000000109	DATA	Keydown: 3
+100.21291499999643	EXP	text: text = 83
+100.9945999999909	DATA	Keydown: 8
+101.02049499998975	EXP	text: text = 838
+102.49764499999583	DATA	Keydown: 6
+102.51982999999018	EXP	text: text = 8386
+102.65476999999373	DATA	Keydown: 0
+102.66285499998776	EXP	text: text = 83860
+103.02103499999794	DATA	Keydown: Enter
+103.02933999999368	EXP	feedback: text = Too high!
+103.02933999999368	EXP	text: text = null
+105.15618999999424	DATA	Keydown: 8
+105.16908999999578	EXP	text: text = 8
+106.0867900000012	DATA	Keydown: 3
+106.09466999999131	EXP	text: text = 83
+106.67880499998864	DATA	Keydown: 8
+106.70255499999621	EXP	text: text = 838
+110.26000999999815	DATA	Keydown: 5
+110.26843999999983	EXP	text: text = 8385
+110.81440999999177	DATA	Keydown: 5
+110.8363449999888	EXP	text: text = 83855
+111.48217999999179	DATA	Keydown: Enter
+111.49965499999234	EXP	feedback: text = Too low!
+111.49965499999234	EXP	text: text = null
+114.00668500000029	DATA	Keydown: 8
+114.01463499999954	EXP	text: text = 8
+115.04651499999454	DATA	Keydown: 3
+115.06865000000107	EXP	text: text = 83
+116.12034999999742	DATA	Keydown: 8
+116.12845499999821	EXP	text: text = 838
+118.5876900000003	DATA	Keydown: 5
+118.59589499999129	EXP	text: text = 8385
+121.78114999999525	DATA	Keydown: 7
+121.8020899999974	EXP	text: text = 83857
+122.59687499998836	DATA	Keydown: Enter
+122.62171999999555	EXP	instr: autoDraw = null
+122.62171999999555	EXP	text: autoDraw = null
+122.62171999999555	EXP	feedback: autoDraw = null
+122.62171999999555	EXP	text: text = null
+122.62171999999555	EXP	game_over_text: autoDraw = true
+128.68334499999764	DATA	Keydown: n

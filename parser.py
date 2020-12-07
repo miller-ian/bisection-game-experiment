@@ -20,65 +20,38 @@ def parse(f_name):
     f = open(directory + f_name, 'r')
     lines = f.read().splitlines()
     f.close()
-    name = ""
-    for line in lines:
-        if "DATA" in line:
-            colon = line.find(":")
-            key = line[colon + 2:]
-            print(line)
-            if key in alphabet:
-                name += key
-    participant.name = name[:-1]
-    print("_____")
-    print(name)
-    if name[-1] in 'nN':
+    nameEnd = f_name.find("_main")
+    participant.name = f_name[:nameEnd]
+    
+    lastLine = lines[-1]
+    lastCharacter = lastLine[-1]
+    if lastCharacter in 'nN':
         participant.binary_search_familiar = False
     else:
         participant.binary_search_familiar = True
     
-    indicesOfResponses = []
-    count = 0
-    for line in lines:
-        if "EXP	text:" in line and "text =" in line:
-            colon = line.find(":")
-            key = line[colon + 2:]
-            if "null" in line:
-                indicesOfResponses.append(count-1)
-            count += 1
-    indicesOfResponses = indicesOfResponses[2:]
-    indicesOfResponsesCopy = indicesOfResponses.copy()
-    count = 0
     participant_responses = []
-    for line in lines:
-        if "EXP	text:" in line and "text =" in line:
-            colon = line.find(":")
-            key = line[colon + 2:]
+    submit_timestamps = []
+    for i in range(1, len(lines)):
+        previous_line = lines[i-1]
+        line = lines[i]
+        if "DATA" in line and "Keydown: Enter" in line and "EXP" in previous_line and "text:" in previous_line: 
+            equalsSign = previous_line.find("=")
+            key = previous_line[equalsSign + 2:]
+            participant_responses.append(key)
 
-            if len(indicesOfResponses) > 0 and count == indicesOfResponses[0]:
-                indicesOfResponses.pop(0)
-                equalsSign = line.find("=")
-                key = line[equalsSign + 2:]
-                participant_responses.append(key)
-            count += 1
+            decimal = line.find(".")
+            time = line[:decimal + 3]
+            submit_timestamps.append(time)
+
+            
     participant.responses = participant_responses
 
-    indicesOfSubmit = []
-    for index in indicesOfResponsesCopy:
-        indicesOfSubmit.append(index + 1)
-    count = 0
-    responseTimes = []
-    for line in lines:
-        if "EXP	text:" in line and "text =" in line:
-            if len(indicesOfSubmit) > 0 and count == indicesOfSubmit[0]:
-                decimal = line.find(".")
-                time = line[:decimal + 4]
-                responseTimes.append(time)
-                indicesOfSubmit.pop(0)
-            count += 1
+    
     deltas = []
-    for i in range(len(responseTimes) - 1):
-        floatTimeInitial = float(responseTimes[i])
-        floatTimeFinal = float(responseTimes[i+1])
+    for i in range(len(submit_timestamps) - 1):
+        floatTimeInitial = float(submit_timestamps[i])
+        floatTimeFinal = float(submit_timestamps[i+1])
         delta = round(floatTimeFinal - floatTimeInitial, 3)
         deltas.append(delta)
     participant.response_times = deltas
@@ -95,3 +68,5 @@ def get_list():
         # if count == 2:
         #     break
     return returnList
+
+participant_list = get_list()
