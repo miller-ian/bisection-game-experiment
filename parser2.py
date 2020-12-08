@@ -1,6 +1,6 @@
 import os
 
-directory = 'small_interval_results/'
+directory = 'middle_interval_results/'
 listOfLogFiles = []
 for f in os.listdir(directory):
     if f.endswith('.log'):
@@ -69,10 +69,11 @@ def get_list():
         #     break
     return returnList
 
-participant_list = get_list()
-count = 0
-for i in participant_list:
-    print(i.name)
-    print(i.responses[0])
-    count += 1
-print(count)
+# # test output: getting first responses
+# participant_list = get_list()
+# count = 0
+# for i in participant_list:
+#     print(i.name)
+#     print(i.responses[0])
+#     count += 1
+# print(count)
