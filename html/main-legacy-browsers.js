@@ -104,7 +104,7 @@ function experimentInit() {
   instText = new visual.TextStim({
     win: psychoJS.window,
     name: 'instText',
-    text: 'In this game you will be asked to guess a random number from 1 to 100,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
+    text: 'In this game you will be asked to guess a random number from 1 to 1,000 (inclusive). \n\nEach time you guess, you will receive a hint. That hint will either tell you that your guess was too high or too low. You can use that feedback in your next turn. \n\nPlease note that you must use the number row to type in guesses (not the number pad)! \n\nPress the space bar to continue...',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -119,7 +119,7 @@ function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: 'Type in your guess and press “enter” in order to submit that guess.\n\nYour final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. \n\nPress the space bar to start the game…\n',
+    text: 'Type in your guess and press “enter” in order to submit that guess.\n\nYour final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. You are not permitted to use a calculator or write anything down during the game! \n\nPress the space bar to start the game…\n',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -490,7 +490,7 @@ function trialRoutineBegin(snapshot) {
 }
 
 var textAdd;
-var answer = Math.floor(Math.random() * (100000)) + 1;
+var answer = 433;
 function trialRoutineEachFrame(snapshot) {
   return function () {
     //------Loop for each frame of Routine 'trial'-------

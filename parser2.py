@@ -2,7 +2,7 @@ import os
 
 directory = 'big_interval_results/'
 listOfLogFiles = []
-for f in os.listdir(directory):
+for f in os.listdir('middle_interval_results'):
     if f.endswith('.log'):
         listOfLogFiles.append(f)
 

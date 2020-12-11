@@ -110,7 +110,7 @@
       <CodeComponent name="code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = random.randint(1, 100,000)" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;continueGame = 1&amp;#10;answer = 433" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="modify = false;&amp;#10;text.text = '';" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="modify = False&amp;#10;text.text = ''&amp;#10;event.clearEvents('keyboard')&amp;#10;" valType="extendedCode"/>
@@ -190,7 +190,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Type in your guess and press “enter” in order to submit that guess.&amp;#10;&amp;#10;Your final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. &amp;#10;&amp;#10;Press the space bar to start the game…&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Type in your guess and press “enter” in order to submit that guess.&amp;#10;&amp;#10;Your final score will be based on a combination of: 1) total time you took to submit each guess, and 2) the number of guesses it took for you to finally get the correct number. You are not permitted to use a calculator or write anything down during the game!&amp;#10;&amp;#10;Press the space bar to start the game…&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
