@@ -13,15 +13,14 @@ from scipy.stats import uniform, norm
 
 
 results = parser2.get_list()
+# set the appropirate upper bound depending on experiment
+UPPER = 1000 # 10 for small-, 1000 for mid-, 100000 for big-interval
 
 # # check parser attributes
 # print("Getting data for experiment: ", 
 #       parser2.directory, end="\n\n")
 # print("Attributes of a participant: ", 
 #       results[0].__dict__.keys(), end="\n\n")
-
-# set the appropirate upper bound depending on experiment
-UPPER = 1000 # 10 for small-, 1000 for mid-, 100000 for big-interval
 
 # optimal bisection search 
 def bisection_search_global_optimal(secret, lower, upper):
