@@ -13,34 +13,14 @@ from scipy.stats import uniform, norm
 
 
 results = parser2.get_list()
+# set the appropirate upper bound depending on experiment
+UPPER = 1000 # 10 for small-, 1000 for mid-, 100000 for big-interval
 
-# # process results 
+# # check parser attributes
 # print("Getting data for experiment: ", 
 #       parser2.directory, end="\n\n")
 # print("Attributes of a participant: ", 
 #       results[0].__dict__.keys(), end="\n\n")
-
-# get the data for the first guess
-first_guesses = []
-# logical vector capturing binary search knowledge
-knows_binSearch = [] 
-for participant in results:
-    responses = participant.responses
-    familiar = 1 if participant.binary_search_familiar else 0
-    if responses:
-        resp = responses[0]
-        if resp != 'null':
-            first_guesses.append(int(resp))
-            knows_binSearch.append(familiar)
-
-# # check outputs
-# print("first guesses: ", first_guesses)
-# print()
-# print("knows bisection search: ", knows_binSearch)
-# print()
-
-# # plot the distribution of first guesses
-# sns.distplot(first_guesses)
 
 # optimal bisection search 
 def bisection_search_global_optimal(secret, lower, upper):
@@ -203,13 +183,84 @@ def bisection_search_conditional(secret, lower, upper, sequence, memLeak=False):
     return trace
 
 
-# get the results of a random single participant
-idx = random.randint(0, len(results))
-actual_guesses = [int(num) for num in results[idx].responses if num!='null']
-secret_num =  actual_guesses[-1]
+# get the data for the first guesses
+first_guesses = []
+# binary search prior knowledge logical vector 
+knows_binSearch = [] 
+for participant in results:
+    responses = participant.responses
+    familiar = 1 if participant.binary_search_familiar else 0
+    if responses:
+        resp = responses[0]
+        if resp != 'null':
+            first_guesses.append(int(resp))
+            knows_binSearch.append(familiar)
 
-# get the conditional guesses
-informed_guesses = bisection_search_conditional(secret_num, 1, 1000, actual_guesses)
-errors = [actual_guesses[i] - informed_guesses[i] for i in 
-          range(len(actual_guesses))]
-print(errors)
+# # check outputs
+# print("first guesses: ", first_guesses)
+# print()
+# print("knows bisection search: ", knows_binSearch)
+# print()
+
+# # plot the distribution of first guesses
+# sns.distplot(first_guesses)
+
+# get guess sequence data as lists to be analyzed in MATLAB
+# a list of the number guesses taken by players until game end
+actual_gameLengths = []
+# a list of the number of guesses the optimal algorithm would take
+optimal_gameLengths = []
+# a list of list of deviations from EIG maximizing guesses
+delta_sequences = []
+# below are not strictly needed
+# a list of all the secret numbers
+secret_numbers = []
+# a list of people's actual guess sequences
+experiment_guessSequences = []
+# a list of optimal bisection guesses
+optimal_guessSequences = []
+# a list of the EIG maximizing guesses
+EIGmax_guessSequences = []
+
+for idx in range(len(results)):
+    # actual guess by participant
+    actual_guesses = [int(num) for num in results[idx].responses if num!='null']
+    secret_num =  actual_guesses[-1]
+    # optimal guesses with pure bisection search
+    optimal_guesses = bisection_search_global_optimal(secret_num, 1, UPPER)
+    # expected information gain maximizing guesses
+    informed_guesses = bisection_search_conditional(secret_num, 1, UPPER, actual_guesses)
+    # calculate the absolute error of the participant
+    errors = [abs(actual_guesses[i] - informed_guesses[i]) for i in range(len(actual_guesses))]
+    
+    # output vectors
+    actual_gameLengths.append(len(actual_guesses))
+    optimal_gameLengths.append(len(optimal_guesses))
+    delta_sequences.append(errors)
+    # extra outputs
+    secret_numbers.append(secret_num)
+    experiment_guessSequences.append(actual_guesses)
+    optimal_guessSequences.append(optimal_guesses)
+    EIGmax_guessSequences.append(informed_guesses)
+    
+# # check outputs
+# print("real game lengths: ", actual_gameLengths)
+# print()
+# print("optimal game lengths: ", optimal_gameLengths)
+# print()
+# print("search deltas: ", delta_sequences)
+# print()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
