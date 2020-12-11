@@ -69,10 +69,11 @@ def get_list():
         #     break
     return returnList
 
-participant_list = get_list()
-count = 0
-for i in participant_list:
-    print(i.name)
-    print(i.responses[0])
-    count += 1
-print(count)
+# # test output: getting first responses
+# participant_list = get_list()
+# count = 0
+# for i in participant_list:
+#     print(i.name)
+#     print(i.responses[0])
+#     count += 1
+# print(count)
