@@ -193,6 +193,6 @@ secret_num =  person_guesses[-1]
 
 
 # get the conditional guesses
-dynamic_guesses = bisection_search_conditioned(secret_num, 1, 1000, person_guesses)
+dynamic_guesses = bisection_search_conditioned(secret_num, 1, 100000, person_guesses)
 errors = [person_guesses[i] - dynamic_guesses[i] for i in range(len(person_guesses))]
 print(errors)
