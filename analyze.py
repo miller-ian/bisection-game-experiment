@@ -144,55 +144,72 @@ def bisection_search_gaussian(secret, lower, upper):
     trace.append(guess)
     return trace
 
-# write a program that sees a person's outputs what the should
-# have guess conditioned on previous responses
-def bisection_search_conditioned(secret, lower, upper, sequence):
+# write a program that sees a partipant's guesses at each turn and outputs
+# what they should have guessed at each turn conditioned on previous responses
+def bisection_search_conditional(secret, lower, upper, sequence, memLeak=False):
     """
-    Returns the running optimal bisection search trace if person
-    maximized information gain after each turn.
+    Returns trace of normative optimal predictions for an agent that 
+    maximizes expected information gain at each turn.
+    
+    Memory Load model: The longer people have been playing,
+                    the more likely they are to forget what their current 
+                    interval bounds (lower, upper) is. When someone forgets a 
+                    bound, they revert to the corresponding default bound of
+                    the game (i.e 1 or 10^x)
     
     Args:
         secret (int): the secret number to be guessed.
         lower (int): inclusive lower bound of interval.
         upper (int): inclusive upper bound of interval.
         sequence (list): the guesses of an actual person.
+        memLeak (bool): account for memory load in long games
             
     Returns:
-        A list of the normative conditioned busection trace.
+        A list of the normative conditional bisection trace.
 
     """
+    UP = upper # global upper bound depends on current game
     trace = [None]*len(sequence)
     
-    for count in range(len(sequence)):
-        if count > 0:
+    for t in range(len(sequence)):
+        if t > 0:
+            # place Memory Load model here if people never 
+            # forget their immediately previous guess
+            
             # what the person guessed last turn
-            pred = sequence[count-1]
+            pred = sequence[t-1]
             if pred < secret:
-                lower = pred # this only looks one back
+                # assumes person remembers lower
+                lower = max(lower, pred) 
             elif pred > secret:
-                upper = pred # should be min({all prev guess > secret})
-        # midpoint maximizes information as first guess
+                # assumes person remembers upper
+                upper = min(upper, pred) 
+        
+        # place Memory Load model here if people can 
+        # forget their immediately previous guess
+        if memLeak:
+            il = random.random() # pseudo-random float in [0,1]
+            iu = random.random() # bounds can 'leak' independently
+            # the probablity of a memory leak increases with time
+            if il < t/100: # 100 >> max # of guesses 
+                lower = 1 # lower bound of all our games is 1
+            if iu < t/100:
+                upper = UP # upper bound is some power of 10
+                
+        # midpoint maximizes information
         guess = (upper + lower)//2
-        trace[count] = guess
+        trace[t] = guess
         
     return trace
 
 
 # get the results of a random single participant
 idx = random.randint(0, len(results))
-person_guesses = [int(num) for num in results[idx].responses if num!='null']
-secret_num =  person_guesses[-1]
-
-# optimal_guesses = bisection_search_global_optimal(secret_num, 1, 1000)
-# uniform_guesses = bisection_search_uniform(secret_num, 1, 1000)
-# normal_guesses = bisection_search_gaussian(secret_num, 1, 1000)
-
-# # compare a person's sequence to the globally optimal sequence
-# print("participant's sequence: ", person_guesses, end="\n\n")
-# print("optimal sequence: ", optimal_guesses, end="\n\n")
-
+actual_guesses = [int(num) for num in results[idx].responses if num!='null']
+secret_num =  actual_guesses[-1]
 
 # get the conditional guesses
-dynamic_guesses = bisection_search_conditioned(secret_num, 1, 100000, person_guesses)
-errors = [person_guesses[i] - dynamic_guesses[i] for i in range(len(person_guesses))]
+informed_guesses = bisection_search_conditional(secret_num, 1, 1000, actual_guesses)
+errors = [actual_guesses[i] - informed_guesses[i] for i in 
+          range(len(actual_guesses))]
 print(errors)
