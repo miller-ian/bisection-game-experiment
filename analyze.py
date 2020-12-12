@@ -231,7 +231,8 @@ for idx in range(len(results)):
     # expected information gain maximizing guesses
     informed_guesses = bisection_search_conditional(secret_num, 1, UPPER, actual_guesses)
     # calculate the absolute error of the participant
-    errors = [abs(actual_guesses[i] - informed_guesses[i]) for i in range(len(actual_guesses))]
+    errors = [min(UPPER, abs(actual_guesses[i] - informed_guesses[i])) for 
+              i in range(len(actual_guesses))]
     
     # output vectors
     actual_gameLengths.append(len(actual_guesses))
@@ -252,7 +253,8 @@ for idx in range(len(results)):
 # print()
     
     
-    
+for l in delta_sequences:
+    print(l, ";")
     
     
     
