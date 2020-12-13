@@ -167,14 +167,17 @@ def bisection_search_conditional(secret, lower, upper, sequence, memLeak=False):
         
         # place Memory Load model here if people can 
         # forget their immediately previous guess
-        if memLeak:
+        if memLeak and t>15 and t<25:
             il = random.random() # pseudo-random float in [0,1]
             iu = random.random() # bounds can 'leak' independently
             # the probablity of a memory leak increases with time
-            if il < t/100: # 100 >> max # of guesses 
-                lower = 1 # lower bound of all our games is 1
-            if iu < t/100:
-                upper = UP # upper bound is some power of 10
+            if il < t/500: # 100 >> max # of guesses 
+                lower = random.choice(sequence[:t-1])
+                # lower = 1 # lower bound of all our games is 1
+            if iu < t/500:
+                upper = random.choice(sequence[:t-1])
+                # upper = UP # upper bound is some power of 10
+                
                 
         # midpoint maximizes information
         guess = (upper + lower)//2
@@ -212,6 +215,8 @@ actual_gameLengths = []
 optimal_gameLengths = []
 # a list of list of deviations from EIG maximizing guesses
 delta_sequences = []
+# a list of list of deviations from leaky EIG maximizing guesses
+delta_leaky_sequences = []
 # below are not strictly needed
 # a list of all the secret numbers
 secret_numbers = []
@@ -219,8 +224,10 @@ secret_numbers = []
 experiment_guessSequences = []
 # a list of optimal bisection guesses
 optimal_guessSequences = []
-# a list of the EIG maximizing guesses
+# a list of the EIG maximizing guesses - no memory leak
 EIGmax_guessSequences = []
+# a list of the EIG maximizing guesses - with memory leak
+EIGmax_memLeak_guessSequences = []
 
 for idx in range(len(results)):
     # actual guess by participant
@@ -230,19 +237,25 @@ for idx in range(len(results)):
     optimal_guesses = bisection_search_global_optimal(secret_num, 1, UPPER)
     # expected information gain maximizing guesses
     informed_guesses = bisection_search_conditional(secret_num, 1, UPPER, actual_guesses)
+    # expected information gain maximizing memory leaky guesses
+    informed_leaky_guesses = bisection_search_conditional(secret_num, 1, UPPER, actual_guesses, memLeak=True)
     # calculate the absolute error of the participant
     errors = [min(UPPER, abs(actual_guesses[i] - informed_guesses[i])) for 
+              i in range(len(actual_guesses))]
+    leaky_errors = [min(UPPER, abs(actual_guesses[i] - informed_leaky_guesses[i])) for 
               i in range(len(actual_guesses))]
     
     # output vectors
     actual_gameLengths.append(len(actual_guesses))
     optimal_gameLengths.append(len(optimal_guesses))
     delta_sequences.append(errors)
+    delta_leaky_sequences.append(leaky_errors)
     # extra outputs
     secret_numbers.append(secret_num)
     experiment_guessSequences.append(actual_guesses)
     optimal_guessSequences.append(optimal_guesses)
     EIGmax_guessSequences.append(informed_guesses)
+    EIGmax_memLeak_guessSequences.append(informed_leaky_guesses)
     
 # # check outputs
 # print("real game lengths: ", actual_gameLengths)
@@ -253,7 +266,7 @@ for idx in range(len(results)):
 # print()
     
     
-for l in delta_sequences:
+for l in delta_leaky_sequences:
     print(l, ";")
     
     
