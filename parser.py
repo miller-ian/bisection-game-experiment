@@ -1,6 +1,6 @@
 import os
 
-directory = 'fixed_magic_number/'
+directory = 'big_interval_results/'
 listOfLogFiles = []
 for f in os.listdir(directory):
     if f.endswith('.log'):
